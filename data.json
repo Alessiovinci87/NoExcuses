@@ -1,1 +1,2823 @@
-[]
+[
+  {
+    "title": "Salvation",
+    "artist": "The Cranberries",
+    "key": "Em",
+    "bpm": "",
+    "items": [
+      {
+        "t": "div",
+        "type": "intro",
+        "note": ""
+      },
+      {
+        "t": "div",
+        "type": "link",
+        "note": "3 giri strumental"
+      },
+      {
+        "t": "div",
+        "type": "verse",
+        "note": ""
+      },
+      {
+        "t": "line",
+        "text": "To all those people doing lines"
+      },
+      {
+        "t": "line",
+        "text": "Don't do it, don't do it"
+      },
+      {
+        "t": "line",
+        "text": "Inject your soul with liberty"
+      },
+      {
+        "t": "line",
+        "text": "It's free, it's free"
+      },
+      {
+        "t": "line",
+        "text": "To all the kids with heroin eyes"
+      },
+      {
+        "t": "line",
+        "text": "Don't do it, don't do it"
+      },
+      {
+        "t": "line",
+        "text": "Because it's not, not what it seems"
+      },
+      {
+        "t": "line",
+        "text": "No, no, it's not, not what it seems"
+      },
+      {
+        "t": "div",
+        "type": "chorus",
+        "note": ""
+      },
+      {
+        "t": "line",
+        "text": "Salvation, salvation, salvation is free"
+      },
+      {
+        "t": "line",
+        "text": "Salvation, salvation, salvation is free"
+      },
+      {
+        "t": "line",
+        "text": "Uh-huh-huh, uh-huh-huh, uh-huh-huh, uh-huh-huh"
+      },
+      {
+        "t": "line",
+        "text": "Uh-huh-huh, uh-huh-huh, uh-huh-huh, uh-huh-huh"
+      },
+      {
+        "t": "line",
+        "text": "Uh-huh-huh, uh-huh-huh, uh-huh-huh, uh-huh-huh"
+      },
+      {
+        "t": "line",
+        "text": "Uh-huh-huh, uh-huh-huh, uh"
+      },
+      {
+        "t": "line",
+        "text": "Doo-doo-doo-doo-doo-doo-doo-doo"
+      },
+      {
+        "t": "line",
+        "text": "Doo-doo-doo-doo"
+      },
+      {
+        "t": "line",
+        "text": "Doo-doo-doo-doo-doo-doo-doo-doo"
+      },
+      {
+        "t": "line",
+        "text": "Doo-doo-doo-doo"
+      },
+      {
+        "t": "div",
+        "type": "link",
+        "note": "STOP x 2"
+      },
+      {
+        "t": "div",
+        "type": "verse",
+        "note": ""
+      },
+      {
+        "t": "line",
+        "text": "To all those parents with sleepless nights"
+      },
+      {
+        "t": "line",
+        "text": "Sleepless nights"
+      },
+      {
+        "t": "line",
+        "text": "Tie your kids home to their beds"
+      },
+      {
+        "t": "line",
+        "text": "Clean their heads"
+      },
+      {
+        "t": "line",
+        "text": "To all the kids with heroin eyes"
+      },
+      {
+        "t": "line",
+        "text": "Don't do it, don't do it"
+      },
+      {
+        "t": "line",
+        "text": "Because it's not, not what it seems"
+      },
+      {
+        "t": "line",
+        "text": "No, no, it's not, not what it seems"
+      },
+      {
+        "t": "div",
+        "type": "chorus",
+        "note": ""
+      },
+      {
+        "t": "line",
+        "text": "Salvation, salvation, salvation is free"
+      },
+      {
+        "t": "line",
+        "text": "Salvation, salvation, salvation is free"
+      },
+      {
+        "t": "line",
+        "text": "Salvation, salvation, salvation is free"
+      },
+      {
+        "t": "line",
+        "text": "Salvation, salvation, salvation is free"
+      },
+      {
+        "t": "line",
+        "text": "Uh-huh-huh, uh-huh-huh, uh-huh-huh, uh-huh-huh"
+      },
+      {
+        "t": "line",
+        "text": "Uh-huh-huh, uh-huh-huh, uh-huh-huh, uh-huh-huh"
+      },
+      {
+        "t": "line",
+        "text": "Uh-huh-huh, uh-huh-huh, uh-huh-huh, uh-huh-huh"
+      },
+      {
+        "t": "line",
+        "text": "Uh-huh-huh, uh-huh-huh, uh"
+      },
+      {
+        "t": "div",
+        "type": "link",
+        "note": "Stop x3"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "One of Us",
+    "artist": "Joan Osborne",
+    "key": "Em",
+    "bpm": "",
+    "items": [
+      {
+        "t": "div",
+        "type": "intro",
+        "note": ""
+      },
+      {
+        "t": "div",
+        "type": "verse",
+        "note": ""
+      },
+      {
+        "t": "line",
+        "text": "So one of these nights and about twelve o'clock"
+      },
+      {
+        "t": "line",
+        "text": "This old world's gonna reel and rock"
+      },
+      {
+        "t": "line",
+        "text": "Saints will tremble and cry for pain"
+      },
+      {
+        "t": "line",
+        "text": "For the Lord's gonna come, in his heavenly airplane"
+      },
+      {
+        "t": "line",
+        "text": "Yeah-yeah, yeah-yeah-yeah-yeah"
+      },
+      {
+        "t": "line",
+        "text": "If God had a name, what would it be?"
+      },
+      {
+        "t": "line",
+        "text": "And would you call it to His face"
+      },
+      {
+        "t": "line",
+        "text": "If you were faced with Him in all His glory?"
+      },
+      {
+        "t": "line",
+        "text": "What would you ask if you had just one question?"
+      },
+      {
+        "t": "div",
+        "type": "pre",
+        "note": ""
+      },
+      {
+        "t": "line",
+        "text": "And yeah, yeah, God is great"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, yeah, God is good"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, yeah, yeah-yeah-yeah"
+      },
+      {
+        "t": "div",
+        "type": "chorus",
+        "note": ""
+      },
+      {
+        "t": "line",
+        "text": "What if God was one of us"
+      },
+      {
+        "t": "line",
+        "text": "Just a slob like one of us"
+      },
+      {
+        "t": "line",
+        "text": "Just a stranger on the bus"
+      },
+      {
+        "t": "line",
+        "text": "Tryin' to make His way home?"
+      },
+      {
+        "t": "line",
+        "text": "If God had a face, what would it look like?"
+      },
+      {
+        "t": "line",
+        "text": "And would you want to see"
+      },
+      {
+        "t": "line",
+        "text": "If seeing meant that you would have to believe"
+      },
+      {
+        "t": "line",
+        "text": "In things like Heaven and in Jesus and the saints"
+      },
+      {
+        "t": "line",
+        "text": "And all the prophets?"
+      },
+      {
+        "t": "line",
+        "text": "And yeah, yeah, God is great"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, yeah, God is good"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, yeah, yeah-yeah-yeah"
+      },
+      {
+        "t": "line",
+        "text": "What if God was one of us"
+      },
+      {
+        "t": "line",
+        "text": "Just a slob like one of us"
+      },
+      {
+        "t": "line",
+        "text": "Just a stranger on the bus"
+      },
+      {
+        "t": "line",
+        "text": "Tryin' to make His way home?"
+      },
+      {
+        "t": "line",
+        "text": "Tryin' to make His way home"
+      },
+      {
+        "t": "line",
+        "text": "Back up to Heaven all alone"
+      },
+      {
+        "t": "line",
+        "text": "Nobody callin' on the phone"
+      },
+      {
+        "t": "line",
+        "text": "'Cept for the Pope, maybe in Rome"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, yeah, God is great"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, yeah, God is good"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, yeah, yeah-yeah-yeah"
+      },
+      {
+        "t": "line",
+        "text": "What if God was one of us"
+      },
+      {
+        "t": "line",
+        "text": "Just a slob like one of us"
+      },
+      {
+        "t": "line",
+        "text": "Just a stranger on the bus"
+      },
+      {
+        "t": "line",
+        "text": "Tryin' to make His way home?"
+      },
+      {
+        "t": "line",
+        "text": "Just tryin' to make His way home?"
+      },
+      {
+        "t": "line",
+        "text": "Like a holy rolling stone?"
+      },
+      {
+        "t": "line",
+        "text": "Back up to Heaven all alone"
+      },
+      {
+        "t": "line",
+        "text": "Just tryin' to make His way home?"
+      },
+      {
+        "t": "line",
+        "text": "Nobody callin' on the phone"
+      },
+      {
+        "t": "line",
+        "text": "'Cept for the Pope, maybe in Rome"
+      },
+      {
+        "t": "div",
+        "type": "solo",
+        "note": ""
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "The Only Thing That Looks Good on Me Is You",
+    "artist": "Bryan Adams",
+    "key": "D",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Try it on babe"
+      },
+      {
+        "t": "line",
+        "text": "Well I don't look good in no Armani Suits"
+      },
+      {
+        "t": "line",
+        "text": "No Gucci shoes or designer boots"
+      },
+      {
+        "t": "line",
+        "text": "I've tried the latest lines from A to Z"
+      },
+      {
+        "t": "line",
+        "text": "But there's just one thing that looks good on me"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "The only thing I want"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I need"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I choose, yeah"
+      },
+      {
+        "t": "line",
+        "text": "The only thing that looks good on me is you"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I'm not satisfied with Versace style"
+      },
+      {
+        "t": "line",
+        "text": "Put those patent leather pants in the circular file"
+      },
+      {
+        "t": "line",
+        "text": "Sometimes I think I might be lookin' good"
+      },
+      {
+        "t": "line",
+        "text": "But there's only one thing that fits like it should"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "The only thing I want, yeah"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I need"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I choose, yeah"
+      },
+      {
+        "t": "line",
+        "text": "The only thing that looks good on me is you"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Yeah, it's you, it could only be you"
+      },
+      {
+        "t": "line",
+        "text": "Nobody else will ever do"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, baby it's you that I stick to"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, we stick like glue"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "The only thing I want"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I need"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I choose, yeah"
+      },
+      {
+        "t": "line",
+        "text": "The only thing that looks good on me is you"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "The only thing I want, yeah"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I need"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I choose, yeah"
+      },
+      {
+        "t": "line",
+        "text": "The only thing that looks good on me is you"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "The only thing I want"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I need"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I choose"
+      },
+      {
+        "t": "line",
+        "text": "The only thing that looks good on me is you"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Oh oh oh"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, hit it, oh"
+      },
+      {
+        "t": "line",
+        "text": "Yeah yeah, you"
+      },
+      {
+        "t": "line",
+        "text": "The only thing that looks good on me is you, yeah"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I want"
+      },
+      {
+        "t": "line",
+        "text": "The only thing I need"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Time Is Running Out",
+    "artist": "Muse",
+    "key": "Am",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "I think I'm drowning"
+      },
+      {
+        "t": "line",
+        "text": "Asphyxiated"
+      },
+      {
+        "t": "line",
+        "text": "I wanna break this spell"
+      },
+      {
+        "t": "line",
+        "text": "That you've created"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "You're something beautiful"
+      },
+      {
+        "t": "line",
+        "text": "A contradiction"
+      },
+      {
+        "t": "line",
+        "text": "I wanna play the game"
+      },
+      {
+        "t": "line",
+        "text": "I want the friction"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "You will be the death of me"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, you will be the death of me"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Bury it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you bury it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you smother it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you murder it"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Our time is running out"
+      },
+      {
+        "t": "line",
+        "text": "Our time is running out"
+      },
+      {
+        "t": "line",
+        "text": "You can't push it underground"
+      },
+      {
+        "t": "line",
+        "text": "You can't stop it screaming out"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I wanted freedom"
+      },
+      {
+        "t": "line",
+        "text": "Bound and restricted"
+      },
+      {
+        "t": "line",
+        "text": "I tried to give you up"
+      },
+      {
+        "t": "line",
+        "text": "But I'm addicted"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Now that you know I'm trapped sense of elation"
+      },
+      {
+        "t": "line",
+        "text": "You'd never dream of"
+      },
+      {
+        "t": "line",
+        "text": "Breaking this fixation"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "You will squeeze the life out of me"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Bury it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you bury it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you smother it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you murder it"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Our time is running out"
+      },
+      {
+        "t": "line",
+        "text": "Our time is running out"
+      },
+      {
+        "t": "line",
+        "text": "You can't push it underground"
+      },
+      {
+        "t": "line",
+        "text": "You can't stop it screaming out"
+      },
+      {
+        "t": "line",
+        "text": "How did it come to this?"
+      },
+      {
+        "t": "line",
+        "text": "Oh oh oh.. yeah yeah yeah yeah yeah"
+      },
+      {
+        "t": "line",
+        "text": "Oh oh oh.. yeah yeah yeah yeah yeah"
+      },
+      {
+        "t": "line",
+        "text": "Oh oh oh.. yeah yeah.. yeah yeah yeah"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Yeah, you will suck the life out of me"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Bury it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you bury it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you smother it"
+      },
+      {
+        "t": "line",
+        "text": "I won't let you murder it"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Our time is running out"
+      },
+      {
+        "t": "line",
+        "text": "Our time is running out"
+      },
+      {
+        "t": "line",
+        "text": "You can't push it underground"
+      },
+      {
+        "t": "line",
+        "text": "You can't stop it screaming out"
+      },
+      {
+        "t": "line",
+        "text": "How did it come to this?"
+      },
+      {
+        "t": "line",
+        "text": "Oh oh oh.. yeah yeah yeah yeah yeah"
+      },
+      {
+        "t": "line",
+        "text": "Oh oh oh.. yeah yeah yeah yeah yeah"
+      },
+      {
+        "t": "line",
+        "text": "Oh oh oh.. yeah yeah.. yeah yeah yeah"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Celebrity Skin",
+    "artist": "The Hole",
+    "key": "A",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Oh, make me over"
+      },
+      {
+        "t": "line",
+        "text": "I'm all I wanna be"
+      },
+      {
+        "t": "line",
+        "text": "A walking study"
+      },
+      {
+        "t": "line",
+        "text": "In demonology"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Hey, so glad you could make it"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, now you've really made it"
+      },
+      {
+        "t": "line",
+        "text": "Hey, so glad you could make it now"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Oh, look at my face"
+      },
+      {
+        "t": "line",
+        "text": "My name is \"Might-Have-Been\""
+      },
+      {
+        "t": "line",
+        "text": "My name is \"Never Was\""
+      },
+      {
+        "t": "line",
+        "text": "My name's forgotten"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Hey, so glad you could make it"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, now you've really made it"
+      },
+      {
+        "t": "line",
+        "text": "Hey, there's only us left now"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "When I wake up in my makeup"
+      },
+      {
+        "t": "line",
+        "text": "It's too early for that dress"
+      },
+      {
+        "t": "line",
+        "text": "Wilted and faded somewhere in Hollywood"
+      },
+      {
+        "t": "line",
+        "text": "I'm glad I came here with your pound of flesh"
+      },
+      {
+        "t": "line",
+        "text": "No second billing 'cause you're a star now"
+      },
+      {
+        "t": "line",
+        "text": "Oh, Cinderella, they aren't sluts like you"
+      },
+      {
+        "t": "line",
+        "text": "Beautiful garbage, beautiful dresses"
+      },
+      {
+        "t": "line",
+        "text": "Can you stand up or will you just fall down?"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "You better watch out"
+      },
+      {
+        "t": "line",
+        "text": "Oh, what you wish for"
+      },
+      {
+        "t": "line",
+        "text": "It better be worth it"
+      },
+      {
+        "t": "line",
+        "text": "So much to die for"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Hey, so glad you could make it"
+      },
+      {
+        "t": "line",
+        "text": "Yeah, now you've really made it"
+      },
+      {
+        "t": "line",
+        "text": "Hey, there's only us left now"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "When I wake up in my makeup"
+      },
+      {
+        "t": "line",
+        "text": "Have you ever felt so used up as this?"
+      },
+      {
+        "t": "line",
+        "text": "It's all so sugarless, hooker, waitress"
+      },
+      {
+        "t": "line",
+        "text": "Model, actress, oh, just go nameless"
+      },
+      {
+        "t": "line",
+        "text": "Honeysuckle, she's full of poison"
+      },
+      {
+        "t": "line",
+        "text": "She obliterated everything she kissed"
+      },
+      {
+        "t": "line",
+        "text": "Now she's fading somewhere in Hollywood"
+      },
+      {
+        "t": "line",
+        "text": "I'm glad I came here with your pound of flesh"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "You want a part of me?"
+      },
+      {
+        "t": "line",
+        "text": "Well, I'm not selling cheap"
+      },
+      {
+        "t": "line",
+        "text": "No, I'm not selling cheap"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Holiday",
+    "artist": "Green Day",
+    "key": "Em",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Say hey!"
+      },
+      {
+        "t": "line",
+        "text": "Cha!"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Hear the sound of the falling rain"
+      },
+      {
+        "t": "line",
+        "text": "Coming down like an Armageddon flame (Hey!)"
+      },
+      {
+        "t": "line",
+        "text": "The shame, the ones who died without a name"
+      },
+      {
+        "t": "line",
+        "text": "Hear the dogs howling out of key"
+      },
+      {
+        "t": "line",
+        "text": "To a hymn called \"Faith and Misery\" (Hey!)"
+      },
+      {
+        "t": "line",
+        "text": "And bleed, the company lost the war today"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I beg to dream and differ from the hollow lies"
+      },
+      {
+        "t": "line",
+        "text": "This is the dawning of the rest of our lives"
+      },
+      {
+        "t": "line",
+        "text": "On holiday!"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Hear the drum pounding out of time"
+      },
+      {
+        "t": "line",
+        "text": "Another protester has crossed the line (Hey!)"
+      },
+      {
+        "t": "line",
+        "text": "To find the money's on the other side"
+      },
+      {
+        "t": "line",
+        "text": "Can I get another Amen? (Amen!)"
+      },
+      {
+        "t": "line",
+        "text": "There's a flag wrapped around a score of men (Hey!)"
+      },
+      {
+        "t": "line",
+        "text": "A gag, a plastic bag on a monument"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I beg to dream and differ from the hollow lies"
+      },
+      {
+        "t": "line",
+        "text": "This is the dawning of the rest of our lives"
+      },
+      {
+        "t": "line",
+        "text": "On holiday! (Hey!)"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Three, four!"
+      },
+      {
+        "t": "line",
+        "text": "\"The representative from California has the floor.\""
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "\"Sieg Heil\" to the president Gasman"
+      },
+      {
+        "t": "line",
+        "text": "Bombs away is your punishment"
+      },
+      {
+        "t": "line",
+        "text": "Pulverize the Eiffel towers"
+      },
+      {
+        "t": "line",
+        "text": "Who criticize your government"
+      },
+      {
+        "t": "line",
+        "text": "Bang bang goes the broken glass, and"
+      },
+      {
+        "t": "line",
+        "text": "Kill all the fags that don't agree"
+      },
+      {
+        "t": "line",
+        "text": "Trials by fire, setting fire"
+      },
+      {
+        "t": "line",
+        "text": "Is not a way that's meant for me"
+      },
+      {
+        "t": "line",
+        "text": "Just 'cause (Hey! Hey! Hey! Hey!)"
+      },
+      {
+        "t": "line",
+        "text": "Just 'cause (Hey! Hey! Hey! Hey!)"
+      },
+      {
+        "t": "line",
+        "text": "Because we're outlaws, yeah!"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I beg to dream and differ from the hollow lies"
+      },
+      {
+        "t": "line",
+        "text": "This is the dawning of the rest of our lives"
+      },
+      {
+        "t": "line",
+        "text": "I beg to dream and differ from the hollow lies"
+      },
+      {
+        "t": "line",
+        "text": "This is the dawning of the rest of our lives"
+      },
+      {
+        "t": "line",
+        "text": "This is our lives on holiday!"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "American Idiot",
+    "artist": "Green Day",
+    "key": "A",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Don't wanna be an American idiot"
+      },
+      {
+        "t": "line",
+        "text": "Don't want a nation under the new media"
+      },
+      {
+        "t": "line",
+        "text": "And can you hear the sound of hysteria?"
+      },
+      {
+        "t": "line",
+        "text": "The subliminal mind fuck America"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Welcome to a new kind of tension"
+      },
+      {
+        "t": "line",
+        "text": "All across the alienation"
+      },
+      {
+        "t": "line",
+        "text": "Where everything isn't meant to be okay"
+      },
+      {
+        "t": "line",
+        "text": "Television dreams of tomorrow"
+      },
+      {
+        "t": "line",
+        "text": "We're not the ones who're meant to follow"
+      },
+      {
+        "t": "line",
+        "text": "For that's enough to argue"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Well maybe I'm the faggot America"
+      },
+      {
+        "t": "line",
+        "text": "I'm not a part of a redneck agenda"
+      },
+      {
+        "t": "line",
+        "text": "Now everybody do the propaganda"
+      },
+      {
+        "t": "line",
+        "text": "And sing along to the age of paranoia"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Welcome to a new kind of tension"
+      },
+      {
+        "t": "line",
+        "text": "All across the alienation"
+      },
+      {
+        "t": "line",
+        "text": "Where everything isn't meant to be okay"
+      },
+      {
+        "t": "line",
+        "text": "Television dreams of tomorrow"
+      },
+      {
+        "t": "line",
+        "text": "We're not the ones who're meant to follow"
+      },
+      {
+        "t": "line",
+        "text": "For that's enough to argue"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Don't want to be an American idiot"
+      },
+      {
+        "t": "line",
+        "text": "One nation controlled by the media"
+      },
+      {
+        "t": "line",
+        "text": "Information age of hysteria"
+      },
+      {
+        "t": "line",
+        "text": "It's calling out to idiot America"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Welcome to a new kind of tension"
+      },
+      {
+        "t": "line",
+        "text": "All across the alienation"
+      },
+      {
+        "t": "line",
+        "text": "Where everything isn't meant to be okay"
+      },
+      {
+        "t": "line",
+        "text": "Television dreams of tomorrow"
+      },
+      {
+        "t": "line",
+        "text": "We're not the ones who're meant to follow"
+      },
+      {
+        "t": "line",
+        "text": "For that's enough to argue"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Strange World",
+    "artist": "Ke",
+    "key": "Am",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Is this our last chance to say all we have to say"
+      },
+      {
+        "t": "line",
+        "text": "Hiding here inside ourselves we live our lives afraid"
+      },
+      {
+        "t": "line",
+        "text": "So close your eyes and just believe in everything your told"
+      },
+      {
+        "t": "line",
+        "text": "Cause in this land of great confusion it's easy to give up control"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Strange world people talk and tell only lies"
+      },
+      {
+        "t": "line",
+        "text": "Strange world people kill an eye for an eye"
+      },
+      {
+        "t": "line",
+        "text": "Strange world dream one-day we'll see the light"
+      },
+      {
+        "t": "line",
+        "text": "Strange world believe and everything will be alright"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "And this is the place where everything begins and ends again"
+      },
+      {
+        "t": "line",
+        "text": "No secrets left to find no seven deadly sins"
+      },
+      {
+        "t": "line",
+        "text": "This world that we have wasted has kept us very well"
+      },
+      {
+        "t": "line",
+        "text": "When science now is sacred who will save us from ourselves"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Strange world people talk and tell only lies"
+      },
+      {
+        "t": "line",
+        "text": "Strange world people kill an eye for an eye"
+      },
+      {
+        "t": "line",
+        "text": "Strange world dream one-day we'll see the light"
+      },
+      {
+        "t": "line",
+        "text": "Strange world believe and everything will be alright"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Strange world people talk sometimes I wonder why"
+      },
+      {
+        "t": "line",
+        "text": "Strange world people kill still no-one hears their cries"
+      },
+      {
+        "t": "line",
+        "text": "Strange world burn these thoughtless tears out of my eyes, eyes"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Strange world people talk and tell only lies"
+      },
+      {
+        "t": "line",
+        "text": "Strange world people kill an eye for an eye"
+      },
+      {
+        "t": "line",
+        "text": "Strange world dream one-day we'll see the light, ahh, ahh"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Strange world people kill and people hate and"
+      },
+      {
+        "t": "line",
+        "text": "People talk and people kill and still I wonder wonder why, why"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Balliamo sul Mondo",
+    "artist": "Ligabue",
+    "key": "D",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Siamo della stessa pasta bionda non la bevo sai"
+      },
+      {
+        "t": "line",
+        "text": "Ce l'hai scritto che la vita non ti viene come vuoi"
+      },
+      {
+        "t": "line",
+        "text": "Ma è la tua e per me è speciale e se ti può bastare sai"
+      },
+      {
+        "t": "line",
+        "text": "Che se hai voglia di ballare uno pronto qui ce l'hai"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Balliamo sul mondo!"
+      },
+      {
+        "t": "line",
+        "text": "Va bene qualsiasi musica"
+      },
+      {
+        "t": "line",
+        "text": "Cadremo ballando"
+      },
+      {
+        "t": "line",
+        "text": "Sul mondo lo sai si scivola"
+      },
+      {
+        "t": "line",
+        "text": "Facciamo un fandango"
+      },
+      {
+        "t": "line",
+        "text": "La' sotto qualcuno ridera'"
+      },
+      {
+        "t": "line",
+        "text": "Balliamo sul... mondo!"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Non ti offro grandi cose però quelle lì le avrai"
+      },
+      {
+        "t": "line",
+        "text": "Niente case nè futuro nè certezze, forse guai"
+      },
+      {
+        "t": "line",
+        "text": "Ma se dall'Atlantide all'Everest non c'è posto per noi"
+      },
+      {
+        "t": "line",
+        "text": "Guido io in questo tango ci facciamo posto dai"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Balliamo sul mondo!"
+      },
+      {
+        "t": "line",
+        "text": "Va bene qualsiasi musica"
+      },
+      {
+        "t": "line",
+        "text": "Cadremo ballando"
+      },
+      {
+        "t": "line",
+        "text": "Però il mondo non si fermerà"
+      },
+      {
+        "t": "line",
+        "text": "Facciamo un fandango"
+      },
+      {
+        "t": "line",
+        "text": "La' sotto qualcuno fischiera'"
+      },
+      {
+        "t": "line",
+        "text": "Balliamo sul...(yehoo) mondo!"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Fred e Ginger sono su una supernova sopra noi"
+      },
+      {
+        "t": "line",
+        "text": "Chiudi gli occhi e tieni il tempo e sarà quasi fatta dai"
+      },
+      {
+        "t": "line",
+        "text": "C'è chi vince e c'è chi perde, noi balliamo casomai"
+      },
+      {
+        "t": "line",
+        "text": "Non avremo classe ma abbiamo gambe e fiato finchè vuoi"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Ballando, ballando sul ballando sul mondo"
+      },
+      {
+        "t": "line",
+        "text": "Facendo, facendo un facendo un fandango"
+      },
+      {
+        "t": "line",
+        "text": "Ballando, ballando sul ballando sul mondo"
+      },
+      {
+        "t": "line",
+        "text": "Ballando, ballando sul ballando sul"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Balliamo sul mondo!"
+      },
+      {
+        "t": "line",
+        "text": "Possiamo anche senza musica"
+      },
+      {
+        "t": "line",
+        "text": "Cadremo ballando"
+      },
+      {
+        "t": "line",
+        "text": "Nessuno però si ferirà"
+      },
+      {
+        "t": "line",
+        "text": "Facciamo un fandango"
+      },
+      {
+        "t": "line",
+        "text": "Là sotto qualcuno applaudirà"
+      },
+      {
+        "t": "line",
+        "text": "Balliamo sul... (yehoo) mondo!"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Bitch",
+    "artist": "Meredith Brooks",
+    "key": "Am",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "I hate the world today"
+      },
+      {
+        "t": "line",
+        "text": "You're so good to me, I know, but I can't change"
+      },
+      {
+        "t": "line",
+        "text": "Tried to tell you but you look at me like maybe"
+      },
+      {
+        "t": "line",
+        "text": "I'm an angel underneath"
+      },
+      {
+        "t": "line",
+        "text": "Innocent and sweet"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Yesterday I cried"
+      },
+      {
+        "t": "line",
+        "text": "You must have been relieved to see the softer side"
+      },
+      {
+        "t": "line",
+        "text": "I can understand how you'd be so confused"
+      },
+      {
+        "t": "line",
+        "text": "I don't envy you"
+      },
+      {
+        "t": "line",
+        "text": "I'm a little bit of everything all rolled into one"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I'm a bitch, I'm a lover"
+      },
+      {
+        "t": "line",
+        "text": "I'm a child, I'm a mother"
+      },
+      {
+        "t": "line",
+        "text": "I'm a sinner, I'm a saint"
+      },
+      {
+        "t": "line",
+        "text": "I do not feel ashamed"
+      },
+      {
+        "t": "line",
+        "text": "I'm your Hell, I'm your dream"
+      },
+      {
+        "t": "line",
+        "text": "I'm nothing in between"
+      },
+      {
+        "t": "line",
+        "text": "You know you wouldn't want it any other way"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "So take me as I am"
+      },
+      {
+        "t": "line",
+        "text": "This may mean you'll have to be a stronger man"
+      },
+      {
+        "t": "line",
+        "text": "Rest assured that when I start to make you nervous"
+      },
+      {
+        "t": "line",
+        "text": "And I'm going to extremes"
+      },
+      {
+        "t": "line",
+        "text": "Tomorrow I will change and today won't mean a thing"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I'm a bitch, I'm a lover"
+      },
+      {
+        "t": "line",
+        "text": "I'm a child, I'm a mother"
+      },
+      {
+        "t": "line",
+        "text": "I'm a sinner, I'm a saint"
+      },
+      {
+        "t": "line",
+        "text": "I do not feel ashamed"
+      },
+      {
+        "t": "line",
+        "text": "I'm your Hell, I'm your dream"
+      },
+      {
+        "t": "line",
+        "text": "I'm nothing in between"
+      },
+      {
+        "t": "line",
+        "text": "You know you wouldn't want it any other way"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Just when you think you got me figured out"
+      },
+      {
+        "t": "line",
+        "text": "The season's already changing"
+      },
+      {
+        "t": "line",
+        "text": "I think it's cool, you do what you do"
+      },
+      {
+        "t": "line",
+        "text": "And don't try to save me"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I'm a bitch, I'm a lover"
+      },
+      {
+        "t": "line",
+        "text": "I'm a child, I'm a mother"
+      },
+      {
+        "t": "line",
+        "text": "I'm a sinner, I'm a saint"
+      },
+      {
+        "t": "line",
+        "text": "I do not feel ashamed"
+      },
+      {
+        "t": "line",
+        "text": "I'm your Hell, I'm your dream"
+      },
+      {
+        "t": "line",
+        "text": "I'm nothing in between"
+      },
+      {
+        "t": "line",
+        "text": "You know you wouldn't want it any other way"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I'm a bitch, I'm a tease"
+      },
+      {
+        "t": "line",
+        "text": "I'm a goddess on my knees"
+      },
+      {
+        "t": "line",
+        "text": "When you hurt, when you suffer"
+      },
+      {
+        "t": "line",
+        "text": "I'm your angel undercover"
+      },
+      {
+        "t": "line",
+        "text": "I've been numb, I'm revived"
+      },
+      {
+        "t": "line",
+        "text": "Can't say I'm not alive"
+      },
+      {
+        "t": "line",
+        "text": "You know I wouldn't want it any other way"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Acida",
+    "artist": "Prozac +",
+    "key": "G",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Mi sento scossa agitata, agitata, un po' nervosa"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acida come di più non si può, di più non si può, come un acido"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Mi sento grande come una città, come una città, una gigante"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acido suono sento solo te, sento solo te il resto che cos'è"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acida sempre acido per me, acido per te, acido cos'è"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Che viaggio strano quando tornerò, poi lo rifarò, poi lo rifarò"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Così lontano non son stata mai, non son stata mai, già ripartirei"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Mi sento bene un po' stordita, ma gioiosa, ma gioiosa"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acida dentro acida con chi, acida con chi, acido non è"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acido il giorno mi rallegra, mi rallegra, testa acida"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acido acida acido acida acido acida acido acida"
+      },
+      {
+        "t": "line",
+        "text": "Acido acida acido acida acido acida acido"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Mi sento scossa agitata, agitata, un po' nervosa"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acida come di più non si può, di più non si può, come un acido"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Mi sento grande come una città, come una città, una gigante"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acido suono sento solo te, sento solo te, il resto che cos'è"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acida sempre acido per me, acido per te, acido cos'e"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh"
+      },
+      {
+        "t": "line",
+        "text": "Acido acida acido acida acido acida acido acida"
+      },
+      {
+        "t": "line",
+        "text": "Acido acida acido acida acido acida acido acida"
+      },
+      {
+        "t": "line",
+        "text": "Acido acida acido acida acido acida acido acida"
+      },
+      {
+        "t": "line",
+        "text": "Acido acida acido acida acido acida acido"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      },
+      {
+        "t": "line",
+        "text": "Uoh uoh oh"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Sk8er Boi",
+    "artist": "Avril Lavigne",
+    "key": "C",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "He was a boy."
+      },
+      {
+        "t": "line",
+        "text": "She was a girl."
+      },
+      {
+        "t": "line",
+        "text": "Can I make it anymore obvious?"
+      },
+      {
+        "t": "line",
+        "text": "He was a punk."
+      },
+      {
+        "t": "line",
+        "text": "She did ballet."
+      },
+      {
+        "t": "line",
+        "text": "What more can I say?"
+      },
+      {
+        "t": "line",
+        "text": "He wanted her."
+      },
+      {
+        "t": "line",
+        "text": "She'd never tell."
+      },
+      {
+        "t": "line",
+        "text": "Secretly she wanted him as well."
+      },
+      {
+        "t": "line",
+        "text": "And all of her friends stuck up their nose."
+      },
+      {
+        "t": "line",
+        "text": "They had a problem with his baggy clothes."
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "He was a skater boy."
+      },
+      {
+        "t": "line",
+        "text": "She said, \"See ya later, boy.\""
+      },
+      {
+        "t": "line",
+        "text": "He wasn't good enough for her."
+      },
+      {
+        "t": "line",
+        "text": "She had a pretty face but her head was up in space."
+      },
+      {
+        "t": "line",
+        "text": "She needed to come back down to earth."
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Five years from now, she sits at home feeding the baby."
+      },
+      {
+        "t": "line",
+        "text": "She's all alone."
+      },
+      {
+        "t": "line",
+        "text": "She turns on TV and guess who she sees?"
+      },
+      {
+        "t": "line",
+        "text": "Skater boy rockin' up MTV."
+      },
+      {
+        "t": "line",
+        "text": "She calls up her friends."
+      },
+      {
+        "t": "line",
+        "text": "They already know."
+      },
+      {
+        "t": "line",
+        "text": "And they've all got tickets to see his show."
+      },
+      {
+        "t": "line",
+        "text": "She tags along,"
+      },
+      {
+        "t": "line",
+        "text": "Stands in the crowd,"
+      },
+      {
+        "t": "line",
+        "text": "Looks up at the man that she turned down."
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "He was a skater boy."
+      },
+      {
+        "t": "line",
+        "text": "She said, \"See ya later, boy.\""
+      },
+      {
+        "t": "line",
+        "text": "He wasn't good enough for her."
+      },
+      {
+        "t": "line",
+        "text": "Now he's a superstar"
+      },
+      {
+        "t": "line",
+        "text": "Slammin' on his guitar"
+      },
+      {
+        "t": "line",
+        "text": "Does your pretty face see what he's worth?"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "He was a skater boy."
+      },
+      {
+        "t": "line",
+        "text": "She said, \"See ya later, boy.\""
+      },
+      {
+        "t": "line",
+        "text": "He wasn't good enough for her."
+      },
+      {
+        "t": "line",
+        "text": "Now he's a superstar"
+      },
+      {
+        "t": "line",
+        "text": "Slammin' on his guitar"
+      },
+      {
+        "t": "line",
+        "text": "Does your pretty face see what he's worth?"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Sorry, girl, but you missed out."
+      },
+      {
+        "t": "line",
+        "text": "Well, tough luck, that boy's mine now."
+      },
+      {
+        "t": "line",
+        "text": "We are more than just good friends."
+      },
+      {
+        "t": "line",
+        "text": "This is how the story ends."
+      },
+      {
+        "t": "line",
+        "text": "Too bad that you couldn't see..."
+      },
+      {
+        "t": "line",
+        "text": "See the man that boy could be."
+      },
+      {
+        "t": "line",
+        "text": "There is more than meets the eye,"
+      },
+      {
+        "t": "line",
+        "text": "I see the soul that is inside."
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "He's just a boy, and I'm just a girl."
+      },
+      {
+        "t": "line",
+        "text": "Can I make it anymore obvious?"
+      },
+      {
+        "t": "line",
+        "text": "We are in love."
+      },
+      {
+        "t": "line",
+        "text": "Haven't you heard how we rock each other's world?"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I'm with the skater boy."
+      },
+      {
+        "t": "line",
+        "text": "I said, \"See ya later, boy.\""
+      },
+      {
+        "t": "line",
+        "text": "I'll be backstage after the show."
+      },
+      {
+        "t": "line",
+        "text": "I'll be at the studio singing the song we wrote"
+      },
+      {
+        "t": "line",
+        "text": "About a girl you used to know."
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I'm with the skater boy."
+      },
+      {
+        "t": "line",
+        "text": "I said, \"See ya later, boy.\""
+      },
+      {
+        "t": "line",
+        "text": "I'll be backstage after the show."
+      },
+      {
+        "t": "line",
+        "text": "I'll be at the studio singing the song we wrote"
+      },
+      {
+        "t": "line",
+        "text": "About a girl you used to know."
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Vertigo",
+    "artist": "U2",
+    "key": "Em",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Unos, dos, tres, catorce!"
+      },
+      {
+        "t": "line",
+        "text": "(Turn it up loud, captain)"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Lights go down, it's dark, the jungle is your head"
+      },
+      {
+        "t": "line",
+        "text": "Can't rule your heart, a feeling so much stron-"
+      },
+      {
+        "t": "line",
+        "text": "-ger than a thought, your eyes are wide and though your soul"
+      },
+      {
+        "t": "line",
+        "text": "It can't be bought, your mind can wander"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Hello, hello! (¡Hola!)"
+      },
+      {
+        "t": "line",
+        "text": "I'm at a place called Vertigo (¿Dónde está?)"
+      },
+      {
+        "t": "line",
+        "text": "It's everything I wish I didn't know"
+      },
+      {
+        "t": "line",
+        "text": "Except you give me something"
+      },
+      {
+        "t": "line",
+        "text": "I can feel"
+      },
+      {
+        "t": "line",
+        "text": "Feel"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "The night is full of holes as bullets rip the sky"
+      },
+      {
+        "t": "line",
+        "text": "Of ink with gold, they twinkle as the boys"
+      },
+      {
+        "t": "line",
+        "text": "Play rock and roll, they know that they can't dance"
+      },
+      {
+        "t": "line",
+        "text": "At least they know"
+      },
+      {
+        "t": "line",
+        "text": "I can't stand the beats, I'm asking for the cheque"
+      },
+      {
+        "t": "line",
+        "text": "The girl with crimson nails has Jesus round her neck"
+      },
+      {
+        "t": "line",
+        "text": "Swinging to the music, swinging to the music"
+      },
+      {
+        "t": "line",
+        "text": "Oh-oh-oh-oh-oh, oh-oh-oh-oh-oh"
+      },
+      {
+        "t": "line",
+        "text": "Oh-oh-oh-oh-oh"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Hello, hello! (¡Hola!)"
+      },
+      {
+        "t": "line",
+        "text": "I'm at a place called Vertigo (¿Dónde está?)"
+      },
+      {
+        "t": "line",
+        "text": "It's everything I wish I didn't know"
+      },
+      {
+        "t": "line",
+        "text": "That you give me something"
+      },
+      {
+        "t": "line",
+        "text": "I can feel"
+      },
+      {
+        "t": "line",
+        "text": "Feel"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Checkmated!"
+      },
+      {
+        "t": "line",
+        "text": "Just fun!"
+      },
+      {
+        "t": "line",
+        "text": "She made it in, yeah!"
+      },
+      {
+        "t": "line",
+        "text": "All of this, all of this can be yours"
+      },
+      {
+        "t": "line",
+        "text": "All of this, all of this can be yours"
+      },
+      {
+        "t": "line",
+        "text": "All of this, all of this can be yours"
+      },
+      {
+        "t": "line",
+        "text": "Just give me what I want and no-one gets hurt"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Hello, hello! (¡Hola!)"
+      },
+      {
+        "t": "line",
+        "text": "We're at a place called Vertigo (¿Dónde está?)"
+      },
+      {
+        "t": "line",
+        "text": "Lights go down and all I know"
+      },
+      {
+        "t": "line",
+        "text": "Is that you give me something"
+      },
+      {
+        "t": "line",
+        "text": "I can feel your love teaching me how"
+      },
+      {
+        "t": "line",
+        "text": "Your love is teaching me how"
+      },
+      {
+        "t": "line",
+        "text": "How to kneel"
+      },
+      {
+        "t": "line",
+        "text": "Kneel"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Yeah yeah yeah yeah yeah yeah yeah (yeah)"
+      },
+      {
+        "t": "line",
+        "text": "Yeah yeah yeah yeah yeah yeah yeah yeah"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  },
+  {
+    "title": "Just a Girl",
+    "artist": "No Doubt",
+    "key": "Bm",
+    "bpm": "",
+    "items": [
+      {
+        "t": "line",
+        "text": "Take this pink ribbon off my eyes"
+      },
+      {
+        "t": "line",
+        "text": "I'm exposed, and it's no big surprise"
+      },
+      {
+        "t": "line",
+        "text": "Don't you think I know exactly where I stand?"
+      },
+      {
+        "t": "line",
+        "text": "This world is forcing me to hold your hand"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "'Cause I'm just a girl, oh, little old me"
+      },
+      {
+        "t": "line",
+        "text": "Well, don't let me out of your sight"
+      },
+      {
+        "t": "line",
+        "text": "Oh, I'm just a girl, all pretty and petite"
+      },
+      {
+        "t": "line",
+        "text": "So don't let me have any rights"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Oh, I've had it up to here"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "The moment that I step outside"
+      },
+      {
+        "t": "line",
+        "text": "So many reasons for me to run and hide"
+      },
+      {
+        "t": "line",
+        "text": "I can't do the little things I hold so dear"
+      },
+      {
+        "t": "line",
+        "text": "'Cause it's all those little things that I fear"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "'Cause I'm just a girl, I'd rather not be"
+      },
+      {
+        "t": "line",
+        "text": "'Cause they won't let me drive late at night"
+      },
+      {
+        "t": "line",
+        "text": "Oh, I'm just a girl, guess I'm some kind of freak"
+      },
+      {
+        "t": "line",
+        "text": "'Cause they all sit and stare with their eyes"
+      },
+      {
+        "t": "line",
+        "text": "Oh, I'm just a girl, take a good look at me"
+      },
+      {
+        "t": "line",
+        "text": "Just your typical prototype"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Oh, I've had it up to here"
+      },
+      {
+        "t": "line",
+        "text": "Oh, am I making myself clear?"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "I'm just a girl"
+      },
+      {
+        "t": "line",
+        "text": "I'm just a girl in the world"
+      },
+      {
+        "t": "line",
+        "text": "That's all that you'll let me be"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Oh, I'm just a girl, living in captivity"
+      },
+      {
+        "t": "line",
+        "text": "Your rule of thumb makes me worrisome"
+      },
+      {
+        "t": "line",
+        "text": "Oh, I'm just a girl, what's my destiny?"
+      },
+      {
+        "t": "line",
+        "text": "What I've succumbed to is making me numb"
+      },
+      {
+        "t": "line",
+        "text": "Oh, I'm just a girl, my apologies"
+      },
+      {
+        "t": "line",
+        "text": "What I've become is so burdensome"
+      },
+      {
+        "t": "line",
+        "text": "Oh, I'm just a girl, lucky me"
+      },
+      {
+        "t": "line",
+        "text": "Twiddle-dum, there's no comparison"
+      },
+      {
+        "t": "line",
+        "text": ""
+      },
+      {
+        "t": "line",
+        "text": "Oh, I've had it up to"
+      },
+      {
+        "t": "line",
+        "text": "Oh, I've had it up to"
+      },
+      {
+        "t": "line",
+        "text": "Oh, I've had it up to here"
+      }
+    ],
+    "speed": 15,
+    "sugSpeed": null
+  }
+]
