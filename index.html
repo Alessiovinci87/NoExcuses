@@ -215,7 +215,6 @@ textarea.form-input{min-height:180px;resize:vertical;font-family:'JetBrains Mono
 </style>
 </head>
 <body>
-<script id="songdata" type="application/json">[]</script>
 <div id="splash"><img id="splashLogo" alt="No Excuses"></div>
 <div id="app">
   <header class="header">
@@ -275,6 +274,7 @@ document.getElementById('splashLogo').src=LOGO;
 document.getElementById('headerLogo').src=LOGO;
 
 const SK='noexcuses_v2';
+/*SONGS_START*/const EMBEDDED=[];/*SONGS_END*/
 let songs=load(),editIdx=null,scrollTimers={};
 const SL={intro:'Intro',verse:'Strofa',pre:'Pre-Rit',chorus:'Ritornello',bridge:'Bridge',solo:'Solo',riff:'Riff',pause:'Pausa',outro:'Outro',interlude:'Interlude',link:'Link'};
 
@@ -282,7 +282,7 @@ const SL={intro:'Intro',verse:'Strofa',pre:'Pre-Rit',chorus:'Ritornello',bridge:
 let items=[],activeBadge=null;
 
 function load(){
-  try{const el=document.getElementById('songdata');if(el){const d=JSON.parse(el.textContent);if(d&&d.length)return d}}catch{}
+  if(EMBEDDED.length)return JSON.parse(JSON.stringify(EMBEDDED));
   try{return JSON.parse(localStorage.getItem(SK))||[]}catch{return[]}
 }
 function sv(){localStorage.setItem(SK,JSON.stringify(songs))}
@@ -578,22 +578,35 @@ function skipAndSave(){
 
 /* =================== EXPORT =================== */
 function exportHTML(){
-  const html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
-  const tag='<script id="songdata" type="application/json">';
-  const endTag='</script>';
-  const a1=html.indexOf(tag);
-  if(a1<0){alert('Errore export');return}
-  const a2=html.indexOf(endTag,a1);
-  const safeJson=JSON.stringify(songs).replace(/<\//g,'<\\/');
-  const newHtml=html.substring(0,a1+tag.length)+safeJson+html.substring(a2);
-  const blob=new Blob([newHtml],{type:'text/html'});
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);
-  a.download='index.html';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(a.href);
+  const marker1='/*SONGS_START*/';
+  const marker2='/*SONGS_END*/';
+  const j=JSON.stringify(songs).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+  
+  // Try fetch first (works from GitHub Pages)
+  fetch(location.href).then(r=>{if(!r.ok)throw'err';return r.text()}).then(doExport).catch(()=>{
+    // Fallback: build from scratch using a hidden copy
+    const x=new XMLHttpRequest();
+    x.open('GET',location.href,true);
+    x.onload=function(){if(x.status===200)doExport(x.responseText);else alert('Apri questa pagina dal link GitHub Pages per esportare')};
+    x.onerror=function(){alert('Apri questa pagina dal link GitHub Pages per esportare')};
+    x.send();
+  });
+  
+  function doExport(src){
+    const i1=src.indexOf(marker1);
+    const i2=src.indexOf(marker2);
+    if(i1<0||i2<0){alert('Errore: marcatori non trovati');return}
+    const before=src.substring(0,i1);
+    const after=src.substring(i2+marker2.length);
+    const newSrc=before+marker1+'const EMBEDDED='+JSON.stringify(songs)+';'+marker2+after;
+    const blob=new Blob([newSrc],{type:'text/html;charset=utf-8'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download='index.html';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(a.href)},200);
+  }
 }
 
 render();
