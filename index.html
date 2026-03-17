@@ -220,7 +220,7 @@ textarea.form-input{min-height:180px;resize:vertical;font-family:'JetBrains Mono
   <header class="header">
     <div class="header-logo"><img id="headerLogo" alt="NE"><h1>Playlist</h1></div>
     <div style="display:flex;gap:6px">
-      <button class="btn-icon" onclick="exportHTML()" title="Esporta HTML" style="font-size:.9rem">&#x2B07;</button>
+      <button class="btn-icon" onclick="exportHTML()" title="Esporta dati" style="font-size:.9rem">&#x2B07;</button>
       <button class="btn-icon" onclick="openAddModal()" title="Aggiungi brano">&#xff0b;</button>
     </div>
   </header>
@@ -274,18 +274,22 @@ document.getElementById('splashLogo').src=LOGO;
 document.getElementById('headerLogo').src=LOGO;
 
 const SK='noexcuses_v2';
-/*SONGS_START*/const EMBEDDED=[];/*SONGS_END*/
-let songs=load(),editIdx=null,scrollTimers={};
+let songs=[],editIdx=null,scrollTimers={};
 const SL={intro:'Intro',verse:'Strofa',pre:'Pre-Rit',chorus:'Ritornello',bridge:'Bridge',solo:'Solo',riff:'Riff',pause:'Pausa',outro:'Outro',interlude:'Interlude',link:'Link'};
 
 /* items: [{t:'line',text:'...'}, {t:'div',type:'chorus',note:''}] */
 let items=[],activeBadge=null;
 
-function load(){
-  if(EMBEDDED.length)return JSON.parse(JSON.stringify(EMBEDDED));
-  try{return JSON.parse(localStorage.getItem(SK))||[]}catch{return[]}
-}
+function loadLocal(){try{return JSON.parse(localStorage.getItem(SK))||[]}catch{return[]}}
 function sv(){localStorage.setItem(SK,JSON.stringify(songs))}
+
+// Load from data.json first, fallback to localStorage
+fetch('data.json').then(r=>{if(!r.ok)throw'err';return r.json()}).then(d=>{
+  if(d&&d.length){songs=d;sv()}else{songs=loadLocal()}
+  render();
+}).catch(()=>{
+  songs=loadLocal();render();
+});
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
 
 window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('splash').classList.add('hide');document.getElementById('app').classList.add('show')},1800)});
@@ -578,38 +582,16 @@ function skipAndSave(){
 
 /* =================== EXPORT =================== */
 function exportHTML(){
-  const marker1='/*SONGS_START*/';
-  const marker2='/*SONGS_END*/';
-  const j=JSON.stringify(songs).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-  
-  // Try fetch first (works from GitHub Pages)
-  fetch(location.href).then(r=>{if(!r.ok)throw'err';return r.text()}).then(doExport).catch(()=>{
-    // Fallback: build from scratch using a hidden copy
-    const x=new XMLHttpRequest();
-    x.open('GET',location.href,true);
-    x.onload=function(){if(x.status===200)doExport(x.responseText);else alert('Apri questa pagina dal link GitHub Pages per esportare')};
-    x.onerror=function(){alert('Apri questa pagina dal link GitHub Pages per esportare')};
-    x.send();
-  });
-  
-  function doExport(src){
-    const i1=src.indexOf(marker1);
-    const i2=src.indexOf(marker2);
-    if(i1<0||i2<0){alert('Errore: marcatori non trovati');return}
-    const before=src.substring(0,i1);
-    const after=src.substring(i2+marker2.length);
-    const newSrc=before+marker1+'const EMBEDDED='+JSON.stringify(songs)+';'+marker2+after;
-    const blob=new Blob([newSrc],{type:'text/html;charset=utf-8'});
-    const a=document.createElement('a');
-    a.href=URL.createObjectURL(blob);
-    a.download='index.html';
-    document.body.appendChild(a);
-    a.click();
-    setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(a.href)},200);
-  }
+  const j=JSON.stringify(songs,null,2);
+  const blob=new Blob([j],{type:'application/json;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='data.json';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(a.href)},200);
 }
 
-render();
 </script>
 </body>
 </html>
