@@ -22,151 +22,141 @@
 html,body{height:100%;overflow:hidden}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;user-select:none}
 
-/* ===== SCREENS ===== */
-.screen{position:absolute;inset:0;display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;overflow:hidden}
+.screen{position:absolute;inset:0;display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;overflow:hidden}
 .screen.active{opacity:1;visibility:visible}
 
-/* ===== HOME ===== */
+/* HOME */
 .home-header{padding:20px 20px 0;display:flex;align-items:center;justify-content:space-between}
 .home-brand{display:flex;align-items:baseline;gap:8px}
-.home-brand h1{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.08em;color:var(--text)}
+.home-brand h1{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.08em}
 .home-brand span{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--accent);letter-spacing:.15em;text-transform:uppercase}
 .home-actions{display:flex;gap:8px}
-.icon-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border-light);background:var(--bg-card);color:var(--text-dim);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;transition:all .2s}
-.icon-btn:active{background:var(--bg-hover);color:var(--accent);border-color:var(--accent);transform:scale(.92)}
+.ib{width:40px;height:40px;border-radius:50%;border:1px solid var(--border-light);background:var(--bg-card);color:var(--text-dim);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;transition:all .2s}
+.ib:active{background:var(--bg-hover);color:var(--accent);border-color:var(--accent);transform:scale(.92)}
 
 .role-bar{display:flex;gap:6px;padding:16px 20px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .role-bar::-webkit-scrollbar{display:none}
-.role-pill{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border-radius:20px;border:1px solid var(--border-light);background:transparent;color:var(--text-muted);cursor:pointer;white-space:nowrap;transition:all .2s;flex-shrink:0}
-.role-pill.active{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:500}
+.rp{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border-radius:20px;border:1px solid var(--border-light);background:transparent;color:var(--text-muted);cursor:pointer;white-space:nowrap;transition:all .2s;flex-shrink:0}
+.rp.on{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:500}
 
-.song-list{flex:1;overflow-y:auto;padding:4px 16px 120px;-webkit-overflow-scrolling:touch}
-.song-list::-webkit-scrollbar{width:0}
-.empty-msg{text-align:center;padding:60px 20px;color:var(--text-muted);font-size:.9rem;line-height:1.6}
-.empty-msg b{color:var(--text-dim);display:block;margin-bottom:4px;font-size:1rem}
+.slist{flex:1;overflow-y:auto;padding:4px 16px 120px;-webkit-overflow-scrolling:touch}
+.slist::-webkit-scrollbar{width:0}
 
-.scard{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:8px;display:flex;align-items:center;gap:14px;cursor:pointer;transition:all .2s}
-.scard:active{background:var(--bg-hover);border-color:var(--border-light);transform:scale(.98)}
-.scard-color{width:4px;height:40px;border-radius:2px;flex-shrink:0}
-.scard-info{flex:1;min-width:0}
-.scard-title{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:.04em;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.scard-sub{font-size:.72rem;color:var(--text-muted);margin-top:2px;display:flex;gap:8px}
-.scard-sub span{display:flex;align-items:center;gap:3px}
-.scard-sections{display:flex;gap:3px;flex-shrink:0}
-.scard-dot{width:6px;height:6px;border-radius:50%}
-.scard-actions{display:flex;gap:6px;flex-shrink:0}
-.scard-btn{width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text-muted);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.85rem;transition:all .2s}
-.scard-btn:active{color:var(--accent);border-color:var(--accent)}
-.scard-btn.live{background:var(--accent);border-color:var(--accent);color:var(--bg);font-size:.7rem;font-weight:700;font-family:'Bebas Neue',sans-serif;letter-spacing:.1em}
+.sc{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:8px;display:flex;align-items:center;gap:14px;cursor:pointer;transition:all .2s}
+.sc:active{background:var(--bg-hover);transform:scale(.98)}
+.sc-i{flex:1;min-width:0}
+.sc-t{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sc-s{font-size:.72rem;color:var(--text-muted);margin-top:2px;display:flex;gap:8px}
+.sc-d{display:flex;gap:3px;flex-shrink:0;align-items:center}
+.sc-dt{width:6px;height:6px;border-radius:50%}
+.sc-a{display:flex;gap:6px;flex-shrink:0}
+.sc-b{width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text-muted);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.85rem}
+.sc-b:active{color:var(--accent);border-color:var(--accent)}
+.sc-go{background:var(--accent)!important;border-color:var(--accent)!important;color:var(--bg)!important;font-size:.7rem!important;font-weight:700;font-family:'Bebas Neue',sans-serif;letter-spacing:.1em}
 
-.fab{position:fixed;bottom:24px;right:20px;width:56px;height:56px;border-radius:50%;background:var(--accent);border:none;color:var(--bg);font-size:1.8rem;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 24px var(--accent-glow);transition:all .2s;z-index:50}
+.fab{position:fixed;bottom:24px;right:20px;width:56px;height:56px;border-radius:50%;background:var(--accent);border:none;color:var(--bg);font-size:1.8rem;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 24px var(--accent-glow);z-index:50}
 .fab:active{transform:scale(.9)}
 
-/* ===== EDIT SONG ===== */
-.edit-header{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--border)}
-.edit-header h2{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;flex:1}
-.edit-body{flex:1;overflow-y:auto;padding:20px;-webkit-overflow-scrolling:touch}
-.field{margin-bottom:16px}
-.field label{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:6px}
-.field input,.field select{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border-light);background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none}
-.field input:focus,.field select:focus{border-color:var(--accent)}
-.field-row{display:flex;gap:10px}
-.field-row .field{flex:1}
+/* EDIT */
+.eh{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--border)}
+.eh h2{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;flex:1}
+.eb{flex:1;overflow-y:auto;padding:20px;-webkit-overflow-scrolling:touch}
+.f{margin-bottom:16px}
+.f label{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:6px}
+.f input,.f select{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border-light);background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none}
+.f input:focus{border-color:var(--accent)}
+.fr{display:flex;gap:10px}
+.fr .f{flex:1}
+.si{display:flex;align-items:center;gap:10px;padding:12px;background:var(--bg-raised);border-radius:10px;margin-bottom:6px;cursor:pointer}
+.si:active{background:var(--bg-hover)}
+.sb{font-family:'Bebas Neue',sans-serif;font-size:.85rem;letter-spacing:.08em;padding:4px 12px;border-radius:6px;min-width:70px;text-align:center}
+.st{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--text-dim);min-width:50px}
+.sn{font-size:.7rem;color:var(--text-muted);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sx{width:28px;height:28px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--riff);opacity:.4;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.7rem;flex-shrink:0}
+.sx:active{opacity:1}
+.ba{width:100%;padding:14px;border-radius:12px;border:2px dashed var(--accent);background:rgba(212,160,52,.05);color:var(--accent);font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.08em;cursor:pointer;margin-top:12px}
+.ba:active{background:rgba(212,160,52,.12)}
+.bb{width:100%;padding:14px;border-radius:12px;border:none;background:var(--accent);color:var(--bg);font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;margin-top:12px}
+.bb:active{filter:brightness(.85)}
 
-.sec-list{margin-top:20px}
-.sec-list-title{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}
-.sec-item{display:flex;align-items:center;gap:10px;padding:12px;background:var(--bg-raised);border-radius:10px;margin-bottom:6px}
-.sec-badge{font-family:'Bebas Neue',sans-serif;font-size:.85rem;letter-spacing:.08em;padding:4px 12px;border-radius:6px;min-width:70px;text-align:center}
-.sec-time{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--text-dim);min-width:50px}
-.sec-notes-preview{font-size:.7rem;color:var(--text-muted);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sec-del{width:28px;height:28px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--riff);opacity:.4;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.7rem;flex-shrink:0}
-.sec-del:active{opacity:1;background:rgba(224,88,72,.1)}
+/* NOTES MODAL */
+.no{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(10px);z-index:300;display:flex;align-items:flex-end;justify-content:center;opacity:0;visibility:hidden;transition:all .3s}
+.no.show{opacity:1;visibility:visible}
+.np{background:var(--bg-card);border:1px solid var(--border-light);border-radius:20px 20px 0 0;width:100%;max-width:500px;max-height:85dvh;overflow-y:auto;padding:24px 20px 40px;transform:translateY(100%);transition:transform .35s cubic-bezier(.22,.61,.36,1)}
+.no.show .np{transform:translateY(0)}
+.nt{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.06em;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between}
+.nt button{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text-dim);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.nf{margin-bottom:12px}
+.nf label{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.nf label .dt{width:8px;height:8px;border-radius:50%}
+.nf input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:.85rem;outline:none}
+.nf input:focus{border-color:var(--accent)}
 
-.btn-map{width:100%;padding:14px;border-radius:12px;border:2px dashed var(--accent);background:rgba(212,160,52,.05);color:var(--accent);font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.08em;cursor:pointer;transition:all .2s;margin-top:12px}
-.btn-map:active{background:rgba(212,160,52,.12);transform:scale(.98)}
-.btn-save{width:100%;padding:14px;border-radius:12px;border:none;background:var(--accent);color:var(--bg);font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;margin-top:12px}
-.btn-save:active{filter:brightness(.85);transform:scale(.98)}
+/* TAP MAP */
+.mh{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.mh h2{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.06em;flex:1}
+.mtimer{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;text-align:center;padding:16px 0 4px;letter-spacing:.04em;color:var(--text-muted)}
+.mtimer.on{color:var(--accent)}
+.mstep{text-align:center;padding:6px 20px;font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--text-muted);letter-spacing:.04em}
+.mstep b{color:var(--accent)}
+.mlog{flex:0 0 auto;max-height:130px;overflow-y:auto;padding:0 20px;margin:8px 0}
+.mlog::-webkit-scrollbar{width:0}
+.ml{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border)}
+.ml-b{font-family:'Bebas Neue',sans-serif;font-size:.7rem;letter-spacing:.06em;padding:2px 8px;border-radius:4px;min-width:55px;text-align:center}
+.ml-t{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--text-dim)}
+.ml-x{color:var(--riff);opacity:.4;cursor:pointer;margin-left:auto;padding:4px 8px;font-size:.75rem}
+.ml-x:active{opacity:1}
 
-/* ===== NOTES MODAL ===== */
-.notes-overlay{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(10px);z-index:300;display:flex;align-items:flex-end;justify-content:center;opacity:0;visibility:hidden;transition:all .3s}
-.notes-overlay.show{opacity:1;visibility:visible}
-.notes-panel{background:var(--bg-card);border:1px solid var(--border-light);border-radius:20px 20px 0 0;width:100%;max-width:500px;max-height:85dvh;overflow-y:auto;padding:24px 20px 40px;transform:translateY(100%);transition:transform .35s cubic-bezier(.22,.61,.36,1)}
-.notes-overlay.show .notes-panel{transform:translateY(0)}
-.notes-title{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.06em;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between}
-.notes-title button{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text-dim);cursor:pointer;display:flex;align-items:center;justify-content:center}
-.note-field{margin-bottom:12px}
-.note-field label{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);display:flex;align-items:center;gap:6px;margin-bottom:4px}
-.note-field label .dot{width:8px;height:8px;border-radius:50%}
-.note-field input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:.85rem;outline:none}
-.note-field input:focus{border-color:var(--accent)}
-.note-save{width:100%;padding:12px;border-radius:10px;border:none;background:var(--accent);color:var(--bg);font-weight:600;cursor:pointer;margin-top:8px}
+.mtypes{display:flex;gap:5px;flex-wrap:wrap;padding:8px 20px;justify-content:center}
+.mt{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.05em;text-transform:uppercase;padding:6px 12px;border-radius:8px;border:2px solid var(--border);background:transparent;cursor:pointer;transition:all .15s}
+.mt:active{transform:scale(.93)}
+.mt.sel{transform:scale(1.08);font-weight:500}
 
-/* ===== TAP MAP ===== */
-.map-header{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
-.map-header h2{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.06em;flex:1}
-.map-timer{font-family:'Bebas Neue',sans-serif;font-size:4rem;text-align:center;padding:30px 0 10px;letter-spacing:.04em;color:var(--text)}
-.map-timer.running{color:var(--accent)}
-.map-timeline{height:40px;margin:0 20px;border-radius:8px;background:var(--bg-raised);position:relative;overflow:hidden}
-.map-tl-block{position:absolute;top:0;height:100%;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,.8);min-width:2px}
-.map-tl-cursor{position:absolute;top:0;width:2px;height:100%;background:var(--accent);z-index:2;transition:left .1s linear}
-.map-badges{display:flex;gap:5px;flex-wrap:wrap;padding:16px 20px;justify-content:center}
-.map-badge{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.05em;text-transform:uppercase;padding:6px 12px;border-radius:8px;border:2px solid var(--border);background:transparent;cursor:pointer;transition:all .15s}
-.map-badge.sel{border-width:2px;transform:scale(1.08)}
-.map-tap-zone{flex:1;display:flex;align-items:center;justify-content:center;margin:10px 20px;border-radius:16px;border:2px dashed var(--border-light);cursor:pointer;transition:all .15s;position:relative;overflow:hidden}
-.map-tap-zone:active{border-color:var(--accent);background:rgba(212,160,52,.05)}
-.map-tap-zone .tap-label{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.1em;color:var(--text-muted)}
-.map-tap-zone .tap-flash{position:absolute;inset:0;background:var(--accent);opacity:0;transition:opacity .08s}
-.map-tap-zone:active .tap-flash{opacity:.15}
-.map-controls{display:flex;gap:10px;padding:16px 20px 28px;justify-content:center}
-.map-ctrl-btn{padding:14px 28px;border-radius:12px;border:none;font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.08em;cursor:pointer;transition:all .2s}
-.map-ctrl-btn.start{background:var(--accent);color:var(--bg)}
-.map-ctrl-btn.stop{background:var(--riff);color:#fff}
-.map-ctrl-btn.done{background:var(--intro);color:#fff}
-.map-ctrl-btn.reset{background:transparent;border:1px solid var(--border);color:var(--text-muted)}
-.map-ctrl-btn:active{transform:scale(.95)}
+.mtap{flex:1;display:flex;align-items:center;justify-content:center;margin:10px 20px;border-radius:16px;border:2px dashed var(--border-light);cursor:pointer;position:relative;overflow:hidden;min-height:100px;transition:all .15s}
+.mtap.off{opacity:.3;pointer-events:none}
+.mtap:active{border-color:var(--accent);background:rgba(212,160,52,.06)}
+.mtap .fl{position:absolute;inset:0;background:var(--accent);opacity:0;pointer-events:none;transition:opacity .06s}
+.mtap:active .fl{opacity:.2}
+.mtap .lb{font-family:'Bebas Neue',sans-serif;text-align:center;line-height:1.5;color:var(--text-muted);padding:10px}
+.mtap .lb b{display:block;font-size:1.8rem;color:var(--text)}
 
-/* ===== LIVE MODE ===== */
-.live{background:#000;position:relative}
-.live-exit{position:fixed;top:12px;right:12px;z-index:400;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.9rem;opacity:0;transition:opacity .3s}
-.live-exit:hover,.live-exit:active{opacity:1}
-.live:hover .live-exit{opacity:.6}
+.mc{display:flex;gap:10px;padding:12px 20px 28px;justify-content:center}
+.mb{padding:14px 28px;border-radius:12px;border:none;font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.08em;cursor:pointer;transition:all .2s}
+.mb:active{transform:scale(.95)}
+.mb.go{background:var(--accent);color:var(--bg)}
+.mb.st{background:var(--riff);color:#fff}
+.mb.ok{background:var(--intro);color:#fff}
+.mb.rs{background:transparent;border:1px solid var(--border);color:var(--text-muted)}
 
-/* Countdown */
-.countdown{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:10}
-.countdown-num{font-family:'Bebas Neue',sans-serif;font-size:12rem;line-height:1;color:var(--accent);animation:countPop .4s ease}
-.countdown-label{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--text-muted);letter-spacing:.15em;margin-top:12px;text-transform:uppercase}
-.countdown-bpm{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--text-dim);margin-top:4px}
-@keyframes countPop{0%{transform:scale(1.4);opacity:0}100%{transform:scale(1);opacity:1}}
+/* LIVE */
+.live{background:#000}
+.lx{position:fixed;top:12px;right:12px;z-index:400;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.9rem}
 
-/* Slides */
-.live-stage{position:absolute;inset:0;display:flex;overflow:hidden}
-.slide{position:absolute;top:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 30px;transition:all .6s cubic-bezier(.25,.46,.45,.94);overflow:hidden}
-.slide.full{left:0;width:100%}
-.slide.half-left{left:0;width:50%;opacity:.5}
-.slide.half-right{left:50%;width:50%;border-left:2px solid rgba(255,255,255,.1)}
-.slide.out-left{left:-100%;width:50%;opacity:0}
-.slide.out-right{left:100%;width:50%;opacity:0}
+.cd{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:10;background:#000}
+.cd-n{font-family:'Bebas Neue',sans-serif;font-size:14rem;line-height:1;color:var(--accent);animation:cp .35s ease}
+.cd-i{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--text-muted);letter-spacing:.15em;margin-top:12px;text-transform:uppercase}
+.cd-b{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--text-dim);margin-top:4px}
+@keyframes cp{0%{transform:scale(1.5);opacity:0}100%{transform:scale(1);opacity:1}}
 
-.slide-type{font-family:'Bebas Neue',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.95);text-shadow:0 2px 20px rgba(0,0,0,.5)}
-.slide.full .slide-type{font-size:clamp(3rem,12vw,8rem)}
-.slide.half-left .slide-type,.slide.half-right .slide-type{font-size:clamp(1.5rem,6vw,3.5rem)}
-.slide-notes{font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,.8);text-align:center;margin-top:16px;line-height:1.8;max-width:90%}
-.slide.full .slide-notes{font-size:clamp(1rem,3.5vw,1.8rem)}
-.slide.half-left .slide-notes,.slide.half-right .slide-notes{font-size:clamp(.65rem,2vw,1rem)}
-.slide-next-label{position:absolute;bottom:20px;font-family:'JetBrains Mono',monospace;font-size:.6rem;color:rgba(255,255,255,.3);letter-spacing:.1em;text-transform:uppercase}
+.stg{position:absolute;inset:0;display:flex;overflow:hidden}
+.sl{position:absolute;top:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 24px;transition:all .55s cubic-bezier(.4,0,.2,1)}
+.sl .tp{font-family:'Bebas Neue',sans-serif;letter-spacing:.12em;text-transform:uppercase;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+.sl .nt2{font-family:'JetBrains Mono',monospace;text-align:center;margin-top:16px;line-height:1.8;max-width:90%}
+.sl .nx{position:absolute;bottom:20px;font-family:'JetBrains Mono',monospace;font-size:.6rem;color:rgba(255,255,255,.3);letter-spacing:.1em;text-transform:uppercase}
 
-.live-progress{position:absolute;bottom:0;left:0;height:3px;background:rgba(255,255,255,.2);transition:width .2s linear;z-index:5}
-.live-beat{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:var(--accent);opacity:0;transition:opacity .05s;z-index:5}
-.live-beat.flash{opacity:1}
+.lprog{position:absolute;bottom:0;left:0;height:3px;transition:width .15s linear;z-index:5}
+.lbt{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:var(--accent);opacity:0;z-index:5}
+.lbt.on{opacity:1}
 
-.live-click-indicator{position:absolute;bottom:12px;right:12px;z-index:5;display:flex;align-items:center;gap:6px}
-.click-dot{width:6px;height:6px;border-radius:50%;background:var(--text-muted);transition:all .1s}
-.click-dot.on{background:var(--accent);transform:scale(1.3)}
-.live-bpm{font-family:'JetBrains Mono',monospace;font-size:.55rem;color:var(--text-muted)}
+.ci{position:absolute;bottom:12px;right:12px;z-index:5;display:flex;align-items:center;gap:6px}
+.ck{width:6px;height:6px;border-radius:50%;background:var(--text-muted);transition:all .08s}
+.ck.on{background:var(--accent);transform:scale(1.4)}
+.cbpm{font-family:'JetBrains Mono',monospace;font-size:.55rem;color:var(--text-muted)}
 
-/* ===== UTILS ===== */
-@keyframes fadeInUp{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
-.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--bg);padding:10px 20px;border-radius:10px;font-size:.82rem;font-weight:600;z-index:999;animation:fadeInUp .3s ease}
+.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--bg);padding:10px 20px;border-radius:10px;font-size:.82rem;font-weight:600;z-index:999;animation:fu .3s ease}
+.empty-msg{text-align:center;padding:60px 20px;color:var(--text-muted);font-size:.9rem;line-height:1.6}
+.empty-msg b{color:var(--text-dim);display:block;margin-bottom:4px;font-size:1rem}
+@keyframes fu{0%{opacity:0;transform:translateX(-50%) translateY(12px)}100%{opacity:1;transform:translateX(-50%) translateY(0)}}
 
 @media(min-width:768px){
   body{display:flex;align-items:center;justify-content:center;padding:24px}
@@ -177,496 +167,342 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);-we
 </head>
 <body>
 
-<!-- HOME SCREEN -->
-<div class="screen active" id="homeScreen">
+<!-- HOME -->
+<div class="screen active" id="s0">
   <div class="home-header">
     <div class="home-brand"><h1>NE Live</h1><span>Conductor</span></div>
     <div class="home-actions">
-      <button class="icon-btn" onclick="importSongs()" title="Importa">📥</button>
-      <button class="icon-btn" onclick="exportLiveData()" title="Esporta">📤</button>
+      <button class="ib" onclick="doImport()" title="Importa">📥</button>
+      <button class="ib" onclick="doExport()" title="Esporta">📤</button>
     </div>
   </div>
-  <div class="role-bar" id="roleBar"></div>
-  <div class="song-list" id="songList"></div>
+  <div class="role-bar" id="rBar"></div>
+  <div class="slist" id="sList"></div>
   <button class="fab" onclick="addSong()">+</button>
 </div>
 
-<!-- EDIT SCREEN -->
-<div class="screen" id="editScreen">
-  <div class="edit-header">
-    <button class="icon-btn" onclick="goHome()" style="font-size:.9rem">←</button>
-    <h2 id="editTitle">Nuovo Brano</h2>
-    <button class="icon-btn" onclick="deleteSong()" style="font-size:.85rem;color:var(--riff)">🗑</button>
+<!-- EDIT -->
+<div class="screen" id="s1">
+  <div class="eh">
+    <button class="ib" onclick="goHome()" style="font-size:.9rem">←</button>
+    <h2 id="eT">Nuovo</h2>
+    <button class="ib" onclick="delSong()" style="font-size:.85rem;color:var(--riff)">🗑</button>
   </div>
-  <div class="edit-body">
-    <div class="field"><label>Titolo</label><input id="fTitle" placeholder="Nome del brano"></div>
-    <div class="field"><label>Artista</label><input id="fArtist" placeholder="Artista originale"></div>
-    <div class="field-row">
-      <div class="field"><label>BPM</label><input id="fBpm" type="number" placeholder="120"></div>
-      <div class="field"><label>Time Signature</label>
-        <select id="fTime"><option value="4">4/4</option><option value="3">3/4</option><option value="6">6/8</option></select>
-      </div>
+  <div class="eb">
+    <div class="f"><label>Titolo</label><input id="fT"></div>
+    <div class="f"><label>Artista</label><input id="fA"></div>
+    <div class="fr">
+      <div class="f"><label>BPM</label><input id="fB" type="number" value="120"></div>
+      <div class="f"><label>Time Sig</label><select id="fS"><option value="4">4/4</option><option value="3">3/4</option><option value="6">6/8</option></select></div>
     </div>
-    <div class="sec-list">
-      <div class="sec-list-title"><span>Sezioni</span><span id="secCount">0</span></div>
-      <div id="secListEl"></div>
+    <div style="margin-top:20px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;display:flex;justify-content:space-between"><span>Sezioni</span><span id="sCnt">0</span></div>
+      <div id="sEl"></div>
     </div>
-    <button class="btn-map" onclick="openMap()">🎯 Mappa i Tempi (Tap)</button>
-    <button class="btn-save" onclick="saveSong()">Salva Brano</button>
+    <button class="ba" onclick="openMap()">🎯 Mappa i Tempi (Tap)</button>
+    <button class="bb" onclick="saveSong()">Salva Brano</button>
   </div>
 </div>
 
-<!-- NOTES MODAL -->
-<div class="notes-overlay" id="notesOverlay" onclick="if(event.target===this)closeNotes()">
-  <div class="notes-panel">
-    <div class="notes-title"><span id="noteSecName">Note Sezione</span><button onclick="closeNotes()">✕</button></div>
-    <div id="noteFields"></div>
-    <button class="note-save" onclick="saveNotes()">Salva Note</button>
+<!-- NOTES -->
+<div class="no" id="nOv" onclick="if(event.target===this)closeN()">
+  <div class="np">
+    <div class="nt"><span id="nN">Note</span><button onclick="closeN()">✕</button></div>
+    <div id="nF"></div>
+    <button class="bb" onclick="saveN()">Salva Note</button>
   </div>
 </div>
 
-<!-- TAP MAP SCREEN -->
-<div class="screen" id="mapScreen">
-  <div class="map-header">
-    <button class="icon-btn" onclick="closeMap()" style="font-size:.9rem">←</button>
+<!-- TAP MAP -->
+<div class="screen" id="s2">
+  <div class="mh">
+    <button class="ib" onclick="closeMap()" style="font-size:.9rem">←</button>
     <h2>Mappa Tempi</h2>
   </div>
-  <div class="map-timer" id="mapTimer">0:00.0</div>
-  <div class="map-timeline" id="mapTimeline"><div class="map-tl-cursor" id="mapCursor" style="left:0"></div></div>
-  <div class="map-badges" id="mapBadges"></div>
-  <div class="map-tap-zone" id="mapTapZone" onclick="mapTap()">
-    <div class="tap-flash"></div>
-    <div class="tap-label">TAP PER SEGNARE</div>
+  <div class="mtimer" id="mTm">0:00.0</div>
+  <div class="mstep" id="mSt">Premi <b>▶ AVVIA</b> poi fai partire la canzone</div>
+  <div class="mlog" id="mLg"></div>
+  <div class="mtypes" id="mTy"></div>
+  <div class="mtap off" id="mTp" onclick="doTap()">
+    <div class="fl"></div>
+    <div class="lb" id="mTpL"><b>TAP</b>Avvia il timer prima</div>
   </div>
-  <div class="map-controls" id="mapControls"></div>
+  <div class="mc" id="mCt"></div>
 </div>
 
-<!-- LIVE SCREEN -->
-<div class="screen live" id="liveScreen">
-  <button class="live-exit" onclick="exitLive()">✕</button>
-  <div class="countdown" id="liveCountdown" style="display:none"></div>
-  <div class="live-stage" id="liveStage"></div>
-  <div class="live-progress" id="liveProgress"></div>
-  <div class="live-beat" id="liveBeat"></div>
-  <div class="live-click-indicator">
-    <span class="click-dot" id="clickDot1"></span>
-    <span class="click-dot" id="clickDot2"></span>
-    <span class="click-dot" id="clickDot3"></span>
-    <span class="click-dot" id="clickDot4"></span>
-    <span class="live-bpm" id="liveBpmLabel"></span>
+<!-- LIVE -->
+<div class="screen live" id="s3">
+  <button class="lx" onclick="exitLive()">✕</button>
+  <div class="cd" id="lCd" style="display:none"></div>
+  <div class="stg" id="lStg"></div>
+  <div class="lprog" id="lPr"></div>
+  <div class="lbt" id="lBt"></div>
+  <div class="ci">
+    <span class="ck" id="d0"></span><span class="ck" id="d1"></span>
+    <span class="ck" id="d2"></span><span class="ck" id="d3"></span>
+    <span class="cbpm" id="dBpm"></span>
   </div>
 </div>
 
 <script>
-/* =================== STATE =================== */
-const ROLES=[
-  {id:'ch1',name:'Chitarra 1',color:'#d4a034'},
-  {id:'ch2',name:'Chitarra 2',color:'#e0a848'},
-  {id:'bass',name:'Basso',color:'#5888d8'},
-  {id:'drums',name:'Batteria',color:'#e05848'},
-  {id:'voice',name:'Voce',color:'#e06898'}
-];
-const SEC_TYPES=[
-  {id:'intro',label:'Intro',color:'var(--intro)'},
-  {id:'verse',label:'Strofa',color:'var(--verse)'},
-  {id:'pre',label:'Pre-Rit',color:'var(--pre)'},
-  {id:'chorus',label:'Ritornello',color:'var(--chorus)'},
-  {id:'bridge',label:'Bridge',color:'var(--bridge)'},
-  {id:'solo',label:'Solo',color:'var(--solo)'},
-  {id:'riff',label:'Riff',color:'var(--riff)'},
-  {id:'interlude',label:'Interlude',color:'var(--interlude)'},
-  {id:'link',label:'Link',color:'var(--link)'},
-  {id:'pause',label:'Pausa',color:'var(--pause)'},
-  {id:'outro',label:'Outro',color:'var(--outro)'}
-];
-const SEC_COLORS={intro:'#40b878',verse:'#8898a8',pre:'#c088d0',chorus:'#e06898',bridge:'#5888d8',solo:'#f0c040',riff:'#e05848',pause:'#606878',outro:'#9868c8',interlude:'#6ab0a0',link:'#a0a060'};
+const ROLES=[{id:'ch1',n:'Chitarra 1',c:'#d4a034'},{id:'ch2',n:'Chitarra 2',c:'#e0a848'},{id:'bass',n:'Basso',c:'#5888d8'},{id:'drums',n:'Batteria',c:'#e05848'},{id:'voice',n:'Voce',c:'#e06898'}];
+const ST=[{id:'intro',l:'Intro'},{id:'verse',l:'Strofa'},{id:'pre',l:'Pre-Rit'},{id:'chorus',l:'Ritornello'},{id:'bridge',l:'Bridge'},{id:'solo',l:'Solo'},{id:'riff',l:'Riff'},{id:'interlude',l:'Interlude'},{id:'link',l:'Link'},{id:'pause',l:'Pausa'},{id:'outro',l:'Outro'}];
+const SC={intro:'#40b878',verse:'#8898a8',pre:'#c088d0',chorus:'#e06898',bridge:'#5888d8',solo:'#f0c040',riff:'#e05848',pause:'#606878',outro:'#9868c8',interlude:'#6ab0a0',link:'#a0a060'};
+function sL(id){return(ST.find(t=>t.id===id)||{l:id}).l}
+function E(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function fm(s){return Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0')}
+function ff(s){return Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0')+'.'+Math.floor((s%1)*10)}
+function toast(m){const t=document.createElement('div');t.className='toast';t.textContent=m;document.body.appendChild(t);setTimeout(()=>t.remove(),2500)}
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active')}
+function goHome(){show('s0');renderHome()}
 
-let songs=[], role='ch1', editIdx=-1, editSections=[];
-let mapRunning=false, mapStart=0, mapElapsed=0, mapRaf=0, mapSelectedType='intro';
-let noteEditIdx=-1;
+/* AUDIO */
+let actx=null;
+function A(){if(!actx)actx=new(window.AudioContext||window.webkitAudioContext)();if(actx.state==='suspended')actx.resume();return actx}
+function beep(hi){
+  try{const c=A(),o=c.createOscillator(),g=c.createGain();
+  o.connect(g);g.connect(c.destination);
+  o.frequency.value=hi?1200:800;o.type='square';
+  g.gain.setValueAtTime(hi?.5:.22,c.currentTime);
+  g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.05);
+  o.start(c.currentTime);o.stop(c.currentTime+.05)}catch(e){}}
 
-/* Audio */
-let audioCtx=null;
-function getAudio(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();return audioCtx}
+// Unlock audio on first touch
+document.addEventListener('touchstart',function u(){A();beep(false);document.removeEventListener('touchstart',u)},{once:true});
+document.addEventListener('click',function u(){A();document.removeEventListener('click',u)},{once:true});
 
-/* =================== STORAGE =================== */
-function load(){
-  try{songs=JSON.parse(localStorage.getItem('ne-live-songs'))||[]}catch(e){songs=[]}
-  try{role=localStorage.getItem('ne-live-role')||'ch1'}catch(e){}
-}
-function save(){localStorage.setItem('ne-live-songs',JSON.stringify(songs));localStorage.setItem('ne-live-role',role)}
+/* STATE */
+let songs=[],role='ch1',eI=-1,eS=[];
+let mOn=false,mT0=0,mE=0,mAf=0,mSel='intro';
+let nI=-1;
 
-/* =================== NAV =================== */
-function showScreen(id){
-  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-}
-function goHome(){showScreen('homeScreen');renderHome()}
+function load(){try{songs=JSON.parse(localStorage.getItem('nel'))||[]}catch(e){songs=[]}
+try{role=localStorage.getItem('ner')||'ch1'}catch(e){}}
+function save(){localStorage.setItem('nel',JSON.stringify(songs));localStorage.setItem('ner',role)}
 
-/* =================== HOME =================== */
+/* HOME */
 function renderHome(){
-  // Roles
-  const rb=document.getElementById('roleBar');
-  rb.innerHTML=ROLES.map(r=>'<button class="role-pill'+(r.id===role?' active':'')+'" onclick="setRole(\''+r.id+'\')">'+r.name+'</button>').join('');
-  // Songs
-  const sl=document.getElementById('songList');
-  if(!songs.length){sl.innerHTML='<div class="empty-msg"><b>Nessun brano</b>Premi + per aggiungerne uno<br>oppure 📥 per importare</div>';return}
-  sl.innerHTML=songs.map((s,i)=>{
-    const dots=s.sections.map(sec=>'<span class="scard-dot" style="background:'+SEC_COLORS[sec.type]+'"></span>').join('');
-    return '<div class="scard" style="animation-delay:'+(i*40)+'ms"><div class="scard-color" style="background:var(--accent)"></div><div class="scard-info"><div class="scard-title">'+esc(s.title)+'</div><div class="scard-sub"><span>'+esc(s.artist||'—')+'</span><span>♩ '+(s.bpm||'?')+'</span><span>'+s.sections.length+' sez.</span></div></div><div class="scard-sections">'+dots+'</div><div class="scard-actions"><button class="scard-btn" onclick="event.stopPropagation();editSong('+i+')" title="Modifica">✎</button><button class="scard-btn live" onclick="event.stopPropagation();startLive('+i+')">▶</button></div></div>'
+  document.getElementById('rBar').innerHTML=ROLES.map(r=>'<button class="rp'+(r.id===role?' on':'')+'" onclick="setRole(\''+r.id+'\')">'+r.n+'</button>').join('');
+  const el=document.getElementById('sList');
+  if(!songs.length){el.innerHTML='<div class="empty-msg"><b>Nessun brano</b>Premi + per aggiungerne uno</div>';return}
+  el.innerHTML=songs.map((s,i)=>{
+    const dots=(s.sections||[]).slice(0,12).map(x=>'<span class="sc-dt" style="background:'+SC[x.type]+'"></span>').join('');
+    return '<div class="sc"><div class="sc-i"><div class="sc-t">'+E(s.title)+'</div><div class="sc-s"><span>'+E(s.artist||'—')+'</span><span>♩ '+(s.bpm||'?')+'</span><span>'+(s.sections||[]).length+' sez</span></div></div><div class="sc-d">'+dots+'</div><div class="sc-a"><button class="sc-b" onclick="event.stopPropagation();editS('+i+')">✎</button><button class="sc-b sc-go" onclick="event.stopPropagation();goLive('+i+')">▶</button></div></div>'
   }).join('');
 }
 function setRole(r){role=r;save();renderHome()}
 
-/* =================== EDIT =================== */
-function addSong(){
-  editIdx=-1;editSections=[];
-  document.getElementById('editTitle').textContent='Nuovo Brano';
-  document.getElementById('fTitle').value='';
-  document.getElementById('fArtist').value='';
-  document.getElementById('fBpm').value='120';
-  document.getElementById('fTime').value='4';
-  renderSections();showScreen('editScreen');
-}
-function editSong(i){
-  editIdx=i;const s=songs[i];
-  document.getElementById('editTitle').textContent='Modifica';
-  document.getElementById('fTitle').value=s.title;
-  document.getElementById('fArtist').value=s.artist||'';
-  document.getElementById('fBpm').value=s.bpm||120;
-  document.getElementById('fTime').value=s.timeSig||'4';
-  editSections=JSON.parse(JSON.stringify(s.sections));
-  renderSections();showScreen('editScreen');
-}
-function renderSections(){
-  const el=document.getElementById('secListEl');
-  document.getElementById('secCount').textContent=editSections.length;
-  if(!editSections.length){el.innerHTML='<div style="text-align:center;padding:20px;color:var(--text-muted);font-size:.8rem">Usa "Mappa i Tempi" per aggiungere sezioni</div>';return}
-  el.innerHTML=editSections.map((s,i)=>{
-    const st=SEC_TYPES.find(t=>t.id===s.type)||SEC_TYPES[0];
-    const notes=s.notes||{};const preview=notes[role]||'';
-    return '<div class="sec-item" onclick="openNotes('+i+')"><span class="sec-badge" style="background:'+SEC_COLORS[s.type]+'22;color:'+SEC_COLORS[s.type]+'">'+st.label+'</span><span class="sec-time">'+fmtTime(s.time)+'</span><span class="sec-notes-preview">'+(preview?esc(preview):'<i style="opacity:.4">tap per note</i>')+'</span><button class="sec-del" onclick="event.stopPropagation();editSections.splice('+i+',1);renderSections()">✕</button></div>'
+/* EDIT */
+function addSong(){eI=-1;eS=[];document.getElementById('eT').textContent='Nuovo Brano';document.getElementById('fT').value='';document.getElementById('fA').value='';document.getElementById('fB').value='120';document.getElementById('fS').value='4';renderSecs();show('s1')}
+function editS(i){eI=i;const s=songs[i];document.getElementById('eT').textContent='Modifica';document.getElementById('fT').value=s.title;document.getElementById('fA').value=s.artist||'';document.getElementById('fB').value=s.bpm||120;document.getElementById('fS').value=s.timeSig||'4';eS=JSON.parse(JSON.stringify(s.sections||[]));renderSecs();show('s1')}
+function renderSecs(){
+  document.getElementById('sCnt').textContent=eS.length;
+  const el=document.getElementById('sEl');
+  if(!eS.length){el.innerHTML='<div style="text-align:center;padding:20px;color:var(--text-muted);font-size:.8rem">Usa "Mappa i Tempi" per aggiungere sezioni</div>';return}
+  el.innerHTML=eS.map((s,i)=>{
+    const n=(s.notes&&s.notes[role])||'';
+    return '<div class="si" onclick="openN('+i+')"><span class="sb" style="background:'+SC[s.type]+'22;color:'+SC[s.type]+'">'+sL(s.type)+'</span><span class="st">'+fm(s.time)+'</span><span class="sn">'+(n?E(n):'<i style="opacity:.4">+ note</i>')+'</span><button class="sx" onclick="event.stopPropagation();eS.splice('+i+',1);renderSecs()">✕</button></div>'
   }).join('');
 }
 function saveSong(){
-  const t=document.getElementById('fTitle').value.trim();
-  if(!t){toast('Inserisci un titolo');return}
-  const obj={
-    title:t,
-    artist:document.getElementById('fArtist').value.trim(),
-    bpm:parseInt(document.getElementById('fBpm').value)||120,
-    timeSig:document.getElementById('fTime').value,
-    sections:editSections
-  };
-  if(editIdx>=0)songs[editIdx]=obj;else songs.push(obj);
-  save();goHome();toast('Brano salvato');
+  const t=document.getElementById('fT').value.trim();if(!t){toast('Inserisci un titolo');return}
+  const o={title:t,artist:document.getElementById('fA').value.trim(),bpm:parseInt(document.getElementById('fB').value)||120,timeSig:document.getElementById('fS').value,sections:eS};
+  if(eI>=0)songs[eI]=o;else songs.push(o);save();goHome();toast('Salvato!')
 }
-function deleteSong(){
-  if(editIdx<0){goHome();return}
-  if(confirm('Eliminare questo brano?')){songs.splice(editIdx,1);save();goHome();toast('Brano eliminato')}
+function delSong(){if(eI<0){goHome();return}if(confirm('Eliminare?')){songs.splice(eI,1);save();goHome()}}
+
+/* NOTES */
+function openN(i){nI=i;const s=eS[i];
+  document.getElementById('nN').textContent=sL(s.type)+' — '+fm(s.time);
+  document.getElementById('nF').innerHTML=ROLES.map(r=>'<div class="nf"><label><span class="dt" style="background:'+r.c+'"></span>'+r.n+'</label><input id="nf_'+r.id+'" value="'+E((s.notes||{})[r.id]||'')+'" placeholder="Note per '+r.n+'"></div>').join('');
+  document.getElementById('nOv').classList.add('show');
+}
+function closeN(){document.getElementById('nOv').classList.remove('show')}
+function saveN(){if(nI<0)return;const n={};ROLES.forEach(r=>{const v=document.getElementById('nf_'+r.id).value.trim();if(v)n[r.id]=v});eS[nI].notes=n;closeN();renderSecs()}
+
+/* TAP MAP */
+function openMap(){mOn=false;mE=0;mSel='intro';renderMap();show('s2')}
+function closeMap(){cancelAnimationFrame(mAf);mOn=false;renderSecs();show('s1')}
+function renderMap(){
+  // Timer
+  const tm=document.getElementById('mTm');tm.textContent=ff(mE);tm.classList.toggle('on',mOn);
+  // Step hint
+  document.getElementById('mSt').innerHTML=mOn?'1⃣ Seleziona tipo ↓  poi 2⃣ <b>TAP</b> quando inizia':'Premi <b>▶ AVVIA</b> poi fai partire la canzone';
+  // Log
+  const lg=document.getElementById('mLg');
+  lg.innerHTML=eS.map((s,i)=>'<div class="ml"><span class="ml-b" style="background:'+SC[s.type]+'22;color:'+SC[s.type]+'">'+sL(s.type)+'</span><span class="ml-t">'+ff(s.time)+'</span><span class="ml-x" onclick="eS.splice('+i+',1);renderMap()">✕</span></div>').join('');
+  lg.scrollTop=lg.scrollHeight;
+  // Types
+  document.getElementById('mTy').innerHTML=ST.map(t=>{const on=t.id===mSel;return'<button class="mt'+(on?' sel':'')+'" style="color:'+SC[t.id]+';border-color:'+(on?SC[t.id]:'var(--border)')+';'+(on?'background:'+SC[t.id]+'20':'')+'" onclick="mSel=\''+t.id+'\';renderMap()">'+t.l+'</button>'}).join('');
+  // Tap zone
+  const tp=document.getElementById('mTp');tp.classList.toggle('off',!mOn);
+  document.getElementById('mTpL').innerHTML=mOn?'<b style="color:'+SC[mSel]+'">'+sL(mSel).toUpperCase()+'</b><span style="font-size:.9rem">TAP quando inizia</span>':'<b>TAP</b>Avvia il timer prima';
+  // Controls
+  const ct=document.getElementById('mCt');
+  ct.innerHTML=mOn
+    ?'<button class="mb st" onclick="stopMap()">⏹ STOP</button>'
+    :'<button class="mb go" onclick="startMap()">▶ AVVIA</button>'+(eS.length?'<button class="mb rs" onclick="eS=[];mE=0;renderMap()">Reset</button><button class="mb ok" onclick="closeMap()">✓ Fatto</button>':'');
+}
+function startMap(){A();mOn=true;mT0=performance.now()-mE*1000;renderMap();tickMap()}
+function stopMap(){mOn=false;cancelAnimationFrame(mAf);renderMap()}
+function tickMap(){if(!mOn)return;mE=(performance.now()-mT0)/1000;document.getElementById('mTm').textContent=ff(mE);mAf=requestAnimationFrame(tickMap)}
+function doTap(){
+  if(!mOn)return;
+  beep(true);
+  eS.push({type:mSel,time:Math.round(mE*10)/10,notes:{}});
+  eS.sort((a,b)=>a.time-b.time);
+  // Auto-suggest next
+  const flow=['intro','verse','pre','chorus','verse','pre','chorus','bridge','solo','chorus','outro'];
+  const ci=flow.indexOf(mSel);if(ci>=0&&ci<flow.length-1)mSel=flow[ci+1];
+  renderMap();
 }
 
-/* =================== NOTES =================== */
-function openNotes(i){
-  noteEditIdx=i;const sec=editSections[i];
-  const st=SEC_TYPES.find(t=>t.id===sec.type)||SEC_TYPES[0];
-  document.getElementById('noteSecName').textContent='Note — '+st.label+' ('+fmtTime(sec.time)+')';
-  const nf=document.getElementById('noteFields');
-  const notes=sec.notes||{};
-  nf.innerHTML=ROLES.map(r=>'<div class="note-field"><label><span class="dot" style="background:'+r.color+'"></span>'+r.name+'</label><input id="nf_'+r.id+'" value="'+esc(notes[r.id]||'')+'" placeholder="Indicazioni per '+r.name+'"></div>').join('');
-  document.getElementById('notesOverlay').classList.add('show');
-}
-function closeNotes(){document.getElementById('notesOverlay').classList.remove('show')}
-function saveNotes(){
-  if(noteEditIdx<0)return;
-  const notes={};
-  ROLES.forEach(r=>{const v=document.getElementById('nf_'+r.id).value.trim();if(v)notes[r.id]=v});
-  editSections[noteEditIdx].notes=notes;
-  closeNotes();renderSections();
-}
+/* ========== LIVE ========== */
+let lS=null,lOn=false,lAf=0,lT0=0,lT=0,lB=0,lLB=0,lSS='';
 
-/* =================== TAP MAP =================== */
-function openMap(){
-  mapRunning=false;mapElapsed=0;
-  // Keep existing sections if any, otherwise start fresh
-  renderMapBadges();renderMapTimeline();renderMapTimer();renderMapControls();
-  showScreen('mapScreen');
+function goLive(i){
+  lS=songs[i];
+  if(!lS.sections||!lS.sections.length){toast('Aggiungi sezioni prima!');return}
+  A(); // Ensure audio context before countdown
+  show('s3');
+  document.getElementById('dBpm').textContent=lS.bpm+' BPM';
+  lOn=false;lT=0;lB=0;lLB=0;lSS='';
+  document.getElementById('lStg').innerHTML='';
+  document.getElementById('lPr').style.width='0';
+  countdown();
 }
-function closeMap(){renderSections();showScreen('editScreen')}
-function renderMapBadges(){
-  document.getElementById('mapBadges').innerHTML=SEC_TYPES.map(t=>'<button class="map-badge'+(t.id===mapSelectedType?' sel':'')+'" style="color:'+SEC_COLORS[t.id]+';border-color:'+(t.id===mapSelectedType?SEC_COLORS[t.id]:'var(--border)')+';'+(t.id===mapSelectedType?'background:'+SEC_COLORS[t.id]+'18':'')+'" onclick="selectMapType(\''+t.id+'\')">'+t.label+'</button>').join('');
-}
-function selectMapType(t){mapSelectedType=t;renderMapBadges()}
-function renderMapTimer(){
-  const el=document.getElementById('mapTimer');
-  el.textContent=fmtTimeFull(mapElapsed);
-  el.classList.toggle('running',mapRunning);
-}
-function renderMapTimeline(){
-  const tl=document.getElementById('mapTimeline');
-  const total=mapElapsed||editSections.reduce((m,s)=>Math.max(m,s.time),0)+10||60;
-  let html='<div class="map-tl-cursor" id="mapCursor" style="left:'+(mapElapsed/total*100)+'%"></div>';
-  editSections.forEach((s,i)=>{
-    const nextTime=editSections[i+1]?editSections[i+1].time:total;
-    const left=s.time/total*100;
-    const width=Math.max((nextTime-s.time)/total*100,1);
-    html+='<div class="map-tl-block" style="left:'+left+'%;width:'+width+'%;background:'+SEC_COLORS[s.type]+'60">'+SEC_TYPES.find(t=>t.id===s.type).label.substr(0,3)+'</div>';
-  });
-  tl.innerHTML=html;
-}
-function renderMapControls(){
-  const mc=document.getElementById('mapControls');
-  if(!mapRunning){
-    mc.innerHTML='<button class="map-ctrl-btn start" onclick="startMap()">▶ Avvia</button><button class="map-ctrl-btn reset" onclick="resetMap()">Reset</button><button class="map-ctrl-btn done" onclick="closeMap()">✓ Fatto</button>';
-  } else {
-    mc.innerHTML='<button class="map-ctrl-btn stop" onclick="stopMap()">⏹ Stop</button>';
-  }
-}
-function startMap(){
-  mapRunning=true;mapStart=performance.now()-mapElapsed*1000;
-  renderMapControls();tickMap();
-}
-function stopMap(){mapRunning=false;cancelAnimationFrame(mapRaf);renderMapControls()}
-function resetMap(){mapElapsed=0;editSections=[];renderMapTimer();renderMapTimeline();renderMapControls()}
-function tickMap(){
-  if(!mapRunning)return;
-  mapElapsed=(performance.now()-mapStart)/1000;
-  renderMapTimer();
-  const total=Math.max(mapElapsed+5,editSections.reduce((m,s)=>Math.max(m,s.time),0)+10);
-  document.getElementById('mapCursor').style.left=(mapElapsed/total*100)+'%';
-  mapRaf=requestAnimationFrame(tickMap);
-}
-function mapTap(){
-  if(!mapRunning)return;
-  playClick(true);
-  editSections.push({type:mapSelectedType,time:Math.round(mapElapsed*10)/10,notes:{}});
-  editSections.sort((a,b)=>a.time-b.time);
-  renderMapTimeline();
-  // Auto-advance to next logical section type
-  const order=['intro','verse','pre','chorus','verse','pre','chorus','bridge','solo','chorus','outro'];
-  const ci=order.indexOf(mapSelectedType);
-  if(ci>=0&&ci<order.length-1){mapSelectedType=order[ci+1];renderMapBadges()}
-}
+function exitLive(){lOn=false;cancelAnimationFrame(lAf);goHome()}
 
-/* =================== LIVE MODE =================== */
-let liveSong=null,liveTimer=0,liveRunning=false,liveRaf=0,liveStart=0;
-let liveBeat=0,liveLastBeatTime=0,liveCountdownLeft=0;
-const ANTICIPATION=4; // seconds before next section to show preview
-
-function startLive(i){
-  liveSong=songs[i];
-  if(!liveSong.sections.length){toast('Aggiungi sezioni prima di partire');return}
-  showScreen('liveScreen');
-  document.getElementById('liveBpmLabel').textContent=liveSong.bpm+' BPM';
-  liveRunning=false;liveTimer=0;
-  startCountdown();
-}
-function exitLive(){
-  liveRunning=false;cancelAnimationFrame(liveRaf);
-  if(audioCtx){audioCtx.close();audioCtx=null}
-  goHome();
-}
-
-function startCountdown(){
-  const bpm=liveSong.bpm||120;
-  const beatMs=60000/bpm;
-  const timeSig=parseInt(liveSong.timeSig)||4;
-  liveCountdownLeft=timeSig;
-  const cd=document.getElementById('liveCountdown');
+function countdown(){
+  const bpm=lS.bpm||120;
+  const ms=60000/bpm;
+  const ts=parseInt(lS.timeSig)||4;
+  let left=ts;
+  const cd=document.getElementById('lCd');
   cd.style.display='flex';
-  document.getElementById('liveStage').innerHTML='';
 
-  function countBeat(){
-    if(liveCountdownLeft<=0){
-      cd.style.display='none';
-      launchLive();return;
-    }
-    cd.innerHTML='<div class="countdown-num">'+liveCountdownLeft+'</div><div class="countdown-label">Pronti</div><div class="countdown-bpm">'+liveSong.bpm+' BPM</div>';
-    playClick(liveCountdownLeft===timeSig);
-    liveCountdownLeft--;
-    setTimeout(countBeat,beatMs);
+  function tick(){
+    if(left<=0){cd.style.display='none';launchLive();return}
+    cd.innerHTML='<div class="cd-n">'+left+'</div><div class="cd-i">Pronti</div><div class="cd-b">'+lS.bpm+' BPM</div>';
+    beep(left===ts);
+    flashD(ts-left,ts);
+    left--;
+    setTimeout(tick,ms);
   }
-  countBeat();
+  setTimeout(tick,400);
 }
 
 function launchLive(){
-  liveRunning=true;liveStart=performance.now();liveBeat=0;liveLastBeatTime=0;
-  renderLiveSlides(-1);
+  lOn=true;lT0=performance.now();lB=0;lLB=0;lSS='';
+  liveRender();
   tickLive();
 }
 
 function tickLive(){
-  if(!liveRunning)return;
-  liveTimer=(performance.now()-liveStart)/1000;
-  const secs=liveSong.sections;
-  const bpm=liveSong.bpm||120;
-  const beatInterval=60/bpm;
-  const timeSig=parseInt(liveSong.timeSig)||4;
+  if(!lOn)return;
+  lT=(performance.now()-lT0)/1000;
+  const bpm=lS.bpm||120;
+  const bi=60/bpm;
+  const ts=parseInt(lS.timeSig)||4;
 
   // Click
-  if(liveTimer-liveLastBeatTime>=beatInterval){
-    liveBeat++;liveLastBeatTime+=beatInterval;
-    const accent=(liveBeat%timeSig===1);
-    playClick(accent);
-    flashBeatDot((liveBeat-1)%timeSig);
+  if(lT>=lLB+bi){
+    lB++;lLB+=bi;
+    beep(lB%ts===1||lB===1);
+    flashD((lB-1)%ts,ts);
+    const b=document.getElementById('lBt');b.classList.add('on');setTimeout(()=>b.classList.remove('on'),80);
   }
 
-  // Find current section
-  let curIdx=-1;
-  for(let j=secs.length-1;j>=0;j--){if(liveTimer>=secs[j].time){curIdx=j;break}}
+  liveRender();
+  liveProgress();
 
-  // Check anticipation for next
-  const nextIdx=curIdx+1;
-  let inAnticipation=false;
-  if(nextIdx<secs.length){
-    const timeToNext=secs[nextIdx].time-liveTimer;
-    if(timeToNext<=ANTICIPATION&&timeToNext>0)inAnticipation=true;
-  }
-
-  renderLiveSlides(curIdx,inAnticipation?nextIdx:-1);
-
-  // Progress
-  if(curIdx>=0){
-    const curStart=secs[curIdx].time;
-    const curEnd=nextIdx<secs.length?secs[nextIdx].time:curStart+30;
-    const pct=Math.min((liveTimer-curStart)/(curEnd-curStart)*100,100);
-    document.getElementById('liveProgress').style.width=pct+'%';
-    document.getElementById('liveProgress').style.background=SEC_COLORS[secs[curIdx].type]||'#fff';
-  }
-
-  // End check
-  const lastSec=secs[secs.length-1];
-  if(liveTimer>lastSec.time+30){exitLive();return}
-
-  liveRaf=requestAnimationFrame(tickLive);
+  // End
+  const last=lS.sections[lS.sections.length-1];
+  if(lT>last.time+30){exitLive();return}
+  lAf=requestAnimationFrame(tickLive);
 }
 
-let lastRenderedState='';
-function renderLiveSlides(curIdx,nextIdx){
-  const state=curIdx+':'+nextIdx;
-  if(state===lastRenderedState)return;
-  lastRenderedState=state;
+function liveProgress(){
+  const secs=lS.sections;
+  let ci=-1;for(let j=secs.length-1;j>=0;j--)if(lT>=secs[j].time){ci=j;break}
+  if(ci<0)return;
+  const cur=secs[ci];
+  const ne=ci+1<secs.length?secs[ci+1].time:cur.time+30;
+  const p=Math.min((lT-cur.time)/(ne-cur.time)*100,100);
+  const bar=document.getElementById('lPr');
+  bar.style.width=p+'%';bar.style.background=SC[cur.type]||'#888';
+}
 
-  const stage=document.getElementById('liveStage');
-  const secs=liveSong.sections;
+function liveRender(){
+  const secs=lS.sections;
+  let ci=-1;for(let j=secs.length-1;j>=0;j--)if(lT>=secs[j].time){ci=j;break}
+  let ni=-1;
+  if(ci+1<secs.length){const g=secs[ci+1].time-lT;if(g<=4&&g>0)ni=ci+1}
 
-  if(curIdx<0){
-    stage.innerHTML='<div class="slide full" style="background:#000"><div class="slide-type" style="opacity:.3">In attesa...</div></div>';
+  const k=ci+'/'+ni;if(k===lSS)return;lSS=k;
+  const stg=document.getElementById('lStg');
+
+  // Before first section
+  if(ci<0){
+    const f=secs[0];const fc=SC[f.type]||'#888';
+    stg.innerHTML='<div class="sl" style="left:0;width:100%;background:#000"><div class="tp" style="font-size:clamp(2rem,8vw,5rem);color:'+fc+';opacity:.4">'+sL(f.type)+'</div><div class="nt2" style="font-size:clamp(.8rem,2.5vw,1.2rem);color:rgba(255,255,255,.3)">In arrivo...</div></div>';
     return;
   }
 
-  const curSec=secs[curIdx];
-  const curColor=SEC_COLORS[curSec.type]||'#888';
-  const curLabel=(SEC_TYPES.find(t=>t.id===curSec.type)||{}).label||curSec.type;
-  const curNotes=(curSec.notes&&curSec.notes[role])||'';
+  const cur=secs[ci];const cc=SC[cur.type]||'#888';const cl=sL(cur.type);
+  const cn=(cur.notes&&cur.notes[role])||'';
 
-  if(nextIdx>=0&&nextIdx<secs.length){
-    // Split view
-    const nSec=secs[nextIdx];
-    const nColor=SEC_COLORS[nSec.type]||'#888';
-    const nLabel=(SEC_TYPES.find(t=>t.id===nSec.type)||{}).label||nSec.type;
-    const nNotes=(nSec.notes&&nSec.notes[role])||'';
-
-    stage.innerHTML=
-      '<div class="slide half-left" style="background:'+curColor+'18">'+
-        '<div class="slide-type" style="color:'+curColor+'">'+curLabel+'</div>'+
-        (curNotes?'<div class="slide-notes">'+esc(curNotes)+'</div>':'')+
+  // SPLIT
+  if(ni>=0){
+    const nx=secs[ni];const nc=SC[nx.type]||'#888';const nl=sL(nx.type);
+    const nn=(nx.notes&&nx.notes[role])||'';
+    stg.innerHTML=
+      '<div class="sl" style="left:0;width:50%;background:'+cc+'12;opacity:.55">'+
+        '<div class="tp" style="font-size:clamp(1.5rem,5vw,3rem);color:'+cc+'">'+cl+'</div>'+
+        (cn?'<div class="nt2" style="font-size:clamp(.6rem,1.8vw,.85rem);color:rgba(255,255,255,.5)">'+E(cn)+'</div>':'')+
       '</div>'+
-      '<div class="slide half-right" style="background:'+nColor+'12">'+
-        '<div class="slide-next-label" style="top:20px;bottom:auto">Prossima</div>'+
-        '<div class="slide-type" style="color:'+nColor+'">'+nLabel+'</div>'+
-        (nNotes?'<div class="slide-notes">'+esc(nNotes)+'</div>':'')+
+      '<div class="sl" style="left:50%;width:50%;background:'+nc+'15;border-left:2px solid rgba(255,255,255,.1)">'+
+        '<div style="position:absolute;top:16px;left:50%;transform:translateX(-50%);font-family:JetBrains Mono,monospace;font-size:.55rem;color:rgba(255,255,255,.4);letter-spacing:.12em;text-transform:uppercase">PROSSIMA</div>'+
+        '<div class="tp" style="font-size:clamp(1.8rem,6vw,3.5rem);color:'+nc+'">'+nl+'</div>'+
+        (nn?'<div class="nt2" style="font-size:clamp(.7rem,2vw,1rem);color:rgba(255,255,255,.7)">'+E(nn)+'</div>':'')+
       '</div>';
-  } else {
-    // Full view
-    const isLast=curIdx===secs.length-1;
-    stage.innerHTML=
-      '<div class="slide full" style="background:'+curColor+'10">'+
-        '<div class="slide-type" style="color:'+curColor+'">'+curLabel+'</div>'+
-        (curNotes?'<div class="slide-notes">'+esc(curNotes)+'</div>':'')+
-        (!isLast&&curIdx+1<secs.length?'<div class="slide-next-label">prossima: '+(SEC_TYPES.find(t=>t.id===secs[curIdx+1].type)||{}).label+'</div>':'')+
-        (isLast?'<div class="slide-next-label">Ultimo giro!</div>':'')+
-      '</div>';
+    return;
   }
+
+  // FULL
+  const isLast=ci===secs.length-1;
+  const nxL=(!isLast&&ci+1<secs.length)?sL(secs[ci+1].type):'';
+  stg.innerHTML=
+    '<div class="sl" style="left:0;width:100%;background:'+cc+'0d">'+
+      '<div class="tp" style="font-size:clamp(3rem,12vw,8rem);color:'+cc+'">'+cl+'</div>'+
+      (cn?'<div class="nt2" style="font-size:clamp(1rem,3.5vw,1.8rem);color:rgba(255,255,255,.8)">'+E(cn)+'</div>':'')+
+      (nxL?'<div class="nx">prossima: '+nxL+'</div>':'')+
+      (isLast?'<div class="nx" style="color:var(--riff)">ULTIMO</div>':'')+
+    '</div>';
 }
 
-function flashBeatDot(idx){
-  const timeSig=parseInt(liveSong?.timeSig)||4;
-  for(let i=0;i<4;i++){
-    const d=document.getElementById('clickDot'+(i+1));
-    if(d){d.classList.toggle('on',i===idx);if(i>=timeSig)d.style.display='none';else d.style.display=''}
-  }
-  const bb=document.getElementById('liveBeat');
-  bb.classList.add('flash');setTimeout(()=>bb.classList.remove('flash'),80);
-}
+function flashD(idx,ts){for(let i=0;i<4;i++){const d=document.getElementById('d'+i);if(!d)continue;d.classList.toggle('on',i===idx);d.style.display=i<ts?'':'none'}}
 
-/* =================== CLICK ENGINE =================== */
-function playClick(accent){
-  try{
-    const ctx=getAudio();
-    const osc=ctx.createOscillator();
-    const gain=ctx.createGain();
-    osc.connect(gain);gain.connect(ctx.destination);
-    osc.frequency.value=accent?1200:800;
-    osc.type='square';
-    gain.gain.setValueAtTime(accent?.4:.2,ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.04);
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime+.04);
-  }catch(e){}
-}
-
-/* =================== IMPORT/EXPORT =================== */
-function importSongs(){
+/* IMPORT/EXPORT */
+function doImport(){
   const inp=document.createElement('input');inp.type='file';inp.accept='.json';
-  inp.onchange=e=>{
-    const f=e.target.files[0];if(!f)return;
-    const reader=new FileReader();
-    reader.onload=ev=>{
-      try{
-        const data=JSON.parse(ev.target.result);
-        if(Array.isArray(data)&&data[0]&&data[0].title){
-          // Import from NoExcuses Playlist format
-          const imported=data.map(s=>({
-            title:s.title||'',
-            artist:s.artist||'',
-            bpm:parseInt(s.bpm)||120,
-            timeSig:'4',
-            sections:(s.items||[]).filter(it=>it.t==='div').map((it,i)=>({
-              type:it.type||'verse',
-              time:i*15, // placeholder timing - needs tap-to-map
-              notes:it.note?{ch1:it.note}:{}
-            }))
-          }));
-          songs=songs.concat(imported);save();renderHome();
-          toast(imported.length+' brani importati! Mappa i tempi per ogni brano.');
-        } else if(Array.isArray(data)&&data[0]&&data[0].sections){
-          // Import NE Live format
-          songs=songs.concat(data);save();renderHome();
-          toast(data.length+' brani importati');
-        }
-      }catch(err){toast('File non valido')}
-    };
-    reader.readAsText(f);
-  };
-  inp.click();
+  inp.onchange=e=>{const f=e.target.files[0];if(!f)return;
+    const r=new FileReader();r.onload=ev=>{try{
+      const d=JSON.parse(ev.target.result);
+      if(Array.isArray(d)){
+        if(d[0]&&d[0].sections){songs=songs.concat(d)}
+        else if(d[0]&&d[0].items){
+          songs=songs.concat(d.map(s=>({title:s.title||'',artist:s.artist||'',bpm:parseInt(s.bpm)||120,timeSig:'4',
+            sections:(s.items||[]).filter(it=>it.t==='div').map((it,j)=>({type:it.type||'verse',time:j*15,notes:it.note?{ch1:it.note}:{}}))})))}
+        save();renderHome();toast('Importato!')
+      }}catch(er){toast('File non valido')}};r.readAsText(f)};inp.click();
 }
-function exportLiveData(){
-  const j=JSON.stringify(songs,null,2);
-  const blob=new Blob([j],{type:'application/json'});
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);a.download='ne-live-data.json';
-  document.body.appendChild(a);a.click();
-  setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(a.href)},200);
+function doExport(){
+  const j=JSON.stringify(songs,null,2);const b=new Blob([j],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ne-live.json';
+  document.body.appendChild(a);a.click();setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(a.href)},200);
 }
 
-/* =================== UTILS =================== */
-function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
-function fmtTime(s){const m=Math.floor(s/60);return m+':'+String(Math.floor(s%60)).padStart(2,'0')}
-function fmtTimeFull(s){const m=Math.floor(s/60);const sec=Math.floor(s%60);const d=Math.floor((s%1)*10);return m+':'+String(sec).padStart(2,'0')+'.'+d}
-function toast(msg){const t=document.createElement('div');t.className='toast';t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2500)}
-
-/* =================== INIT =================== */
 load();renderHome();
 </script>
 </body>
